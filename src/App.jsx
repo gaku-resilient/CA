@@ -4,8 +4,8 @@ import React, { useEffect } from 'react';
 import { createBrowserRouter, RouterProvider, useLocation } from 'react-router-dom';
 
 import Layout from './components/Layout/Layout';
-import Home from './pages/HomeSection';
-import About from './pages/About'
+import Home from './pages/HomeSection.jsx';
+import About from './pages/About.jsx'
 
 function ScrollToTop() {
   const { pathname } = useLocation();
