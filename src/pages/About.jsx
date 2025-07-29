@@ -264,7 +264,7 @@ const AboutPage = () => {
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center space-y-6 mb-16">
             <h2 className="text-4xl md:text-5xl font-black">
-              WHY CHOOSE FINANCEWISE?
+              WHY CHOOSE Vittam Integrity Services?
             </h2>
             <p className="text-xl text-gray-300 max-w-3xl mx-auto">
               Here's what sets us apart from other chartered accountancy firms in Mumbai
@@ -373,7 +373,7 @@ const AboutPage = () => {
                 <ArrowRight className="w-6 h-6" />
               </button>
               <button className="border-2 border-black text-black px-10 py-5 font-black text-lg hover:bg-black hover:text-white transition-all duration-300">
-                CALL +91 98765 43210
+                CALL +91 xxxxx 43210
               </button>
             </div>
 

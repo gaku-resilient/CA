@@ -31,15 +31,15 @@ const Header = () => {
             <div className="hidden md:flex items-center space-x-6">
               <div className="flex items-center space-x-2 group cursor-pointer">
                 <Phone className="w-4 h-4 group-hover:rotate-12 transition-transform" />
-                <span className="font-medium">+91 98765 43210</span>
+                <span className="font-medium">+91 xxxxx 43210</span>
               </div>
               <div className="flex items-center space-x-2 group cursor-pointer">
                 <Mail className="w-4 h-4 group-hover:scale-110 transition-transform" />
-                <span className="font-medium">info@financewise.com</span>
+                <span className="font-medium">info@VittamIntegrityServices.com</span>
               </div>
               <div className="flex items-center space-x-2 group cursor-pointer">
                 <MapPin className="w-4 h-4 group-hover:bounce transition-transform" />
-                <span className="font-medium">Mumbai, Maharashtra</span>
+                <span className="font-medium">Paryagraj</span>
               </div>
             </div>
             <div className="hidden md:flex items-center space-x-4">
@@ -52,7 +52,7 @@ const Header = () => {
               </div>
             </div>
             <div className="md:hidden">
-              <span className="text-xs font-bold">+91 98765 43210</span>
+              <span className="text-xs font-bold">+91 xxxxx 43210</span>
             </div>
           </div>
         </div>
@@ -145,7 +145,7 @@ const Header = () => {
                 HOME
               </a>
               <a 
-                href="#about" 
+                href="/about" 
                 className="block text-white hover:text-gray-300 py-3 font-bold text-lg border-b border-gray-800 hover:border-white transition-all transform hover:translate-x-2"
                 onClick={toggleMobileMenu}
               >
@@ -186,15 +186,15 @@ const Header = () => {
             <div className="space-y-3 pt-6 border-t border-gray-800">
               <div className="flex items-center space-x-3 text-gray-300">
                 <Phone className="w-4 h-4" />
-                <span className="font-medium">+91 98765 43210</span>
+                <span className="font-medium">+91 xxxxx 43210</span>
               </div>
               <div className="flex items-center space-x-3 text-gray-300">
                 <Mail className="w-4 h-4" />
-                <span className="font-medium">info@financewise.com</span>
+                <span className="font-medium">info@VittamIntegrityServices.com</span>
               </div>
               <div className="flex items-center space-x-3 text-gray-300">
                 <MapPin className="w-4 h-4" />
-                <span className="font-medium">Mumbai, Maharashtra</span>
+                <span className="font-medium">Paryagraj</span>
               </div>
             </div>
 
@@ -203,7 +203,7 @@ const Header = () => {
               <a href="#" className="w-10 h-10 border border-white hover:bg-white hover:text-black transition-all duration-300 flex items-center justify-center font-bold rounded-full">F</a>
               <a href="#" className="w-10 h-10 border border-white hover:bg-white hover:text-black transition-all duration-300 flex items-center justify-center font-bold rounded-full">T</a>
               <a href="#" className="w-10 h-10 border border-white hover:bg-white hover:text-black transition-all duration-300 flex items-center justify-center font-bold rounded-full">L</a>
-              <a href="https://wa.me/919876543210" target="_blank" rel="noopener noreferrer" className="w-10 h-10 border border-white hover:bg-white hover:text-black transition-all duration-300 flex items-center justify-center font-bold rounded-full">W</a>
+              <a href="https://wa.me/919354502422" target="_blank" rel="noopener noreferrer" className="w-10 h-10 border border-white hover:bg-white hover:text-black transition-all duration-300 flex items-center justify-center font-bold rounded-full">W</a>
             </div>
           </div>
         </div>

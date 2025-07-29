@@ -125,7 +125,7 @@ const HeroSection = () => {
                     </div>
 
                     <button className="w-full bg-black text-white py-4 font-black text-lg hover:bg-gray-800 transition-all duration-300 transform hover:scale-105 hover:shadow-xl">
-                      BOOK FREE CONSULTATION
+                      Book Financial Consultation now
                     </button>
                   </div>
                 </div>

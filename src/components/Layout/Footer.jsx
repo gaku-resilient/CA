@@ -114,13 +114,9 @@ const Footer = () => {
             <div className="space-y-4">
               {[
                 'About Us',
-                'Our Services',
-                'Our Team',
-                'Case Studies',
-                'Testimonials',
-                'Career',
-                'Blog',
-                'FAQ'
+                'Contact Us',
+                'Services',
+              
               ].map((link, index) => (
                 <a 
                   key={index}
@@ -178,8 +174,8 @@ const Footer = () => {
                   <h5 className="font-bold text-white mb-1">OFFICE ADDRESS</h5>
                   <p className="text-gray-300 leading-relaxed">
                     123 Business District,<br />
-                    Nariman Point, Mumbai,<br />
-                    Maharashtra - 400021
+                    {/* Nariman Point, Mumbai,<br />
+                    Maharashtra - 400021 */}
                   </p>
                 </div>
               </div>
@@ -191,7 +187,7 @@ const Footer = () => {
                 </div>
                 <div>
                   <h5 className="font-bold text-white mb-1">PHONE</h5>
-                  <p className="text-gray-300">+91 98765 43210</p>
+                  <p className="text-gray-300">+91 xxxxx 43210</p>
                 </div>
               </div>
 
@@ -202,7 +198,7 @@ const Footer = () => {
                 </div>
                 <div>
                   <h5 className="font-bold text-white mb-1">EMAIL</h5>
-                  <p className="text-gray-300">info@VittamIntegrityServices.com</p>
+                  <p className="text-gray-300">VittamIntegrityServices.com</p>
                 </div>
               </div>
 
