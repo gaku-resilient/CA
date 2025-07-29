@@ -5,7 +5,7 @@ import HeroSlider from '../components/Herosection/HeroSlider';
 
 const Home = () => {
   return (
-    <div className="home-page">
+    <div className="home-page mt-36">
       {/* Custom Cursor */}
       {/* <Cursor /> */}
       
