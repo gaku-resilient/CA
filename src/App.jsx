@@ -6,6 +6,7 @@ import { createBrowserRouter, RouterProvider, useLocation } from 'react-router-d
 import Layout from './components/Layout/Layout';
 import Home from './pages/HomeSection.jsx';
 import About from './pages/About.jsx'
+import Services from './pages/Services.jsx';
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -29,6 +30,7 @@ const router = createBrowserRouter(
       children: [
         { path: '/', index: true, element: <Home /> },
         { path: '/about', index: true, element: <About /> },
+        // { path: '/services', index: true, element: <Services /> },
    
 
         
