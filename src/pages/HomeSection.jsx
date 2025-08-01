@@ -1,6 +1,7 @@
 import React from 'react';
 // import Navbar from '../components/Layout/Header';
 import HeroSlider from '../components/Herosection/HeroSlider';
+// import Homecheck  from '../components/Herosection/Homepage';
 
 
 const Home = () => {
@@ -11,6 +12,8 @@ const Home = () => {
       
      
       <HeroSlider />
+      {/* <Homecheck/> */}
+
       
       {/* About Section */}
       {/* <AboutSection /> */}

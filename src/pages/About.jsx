@@ -417,13 +417,6 @@
 
 
 
-
-
-
-
-
-
-
 import React, { useState } from 'react';
 import { Shield, Award, Users, TrendingUp, Target, Eye, Heart, Calculator, CheckCircle, Clock, Star, ArrowRight } from 'lucide-react';
 
@@ -431,7 +424,7 @@ const AboutPage = () => {
   const [activeTab, setActiveTab] = useState('mission');
 
   return (
-    <div className="bg-white font-sans min-h-screen">
+    <div className="bg-[#ffffff] font-roboto min-h-screen">
       {/* SEO Meta Information (would be in head in real implementation) */}
       <div className="hidden">
         <h1>About Vittam Chartered Accountants - Mumbai's Leading CA Firm</h1>
@@ -445,35 +438,35 @@ const AboutPage = () => {
       </div>
 
       {/* Hero Section */}
-      <section className="relative min-h-[70vh] sm:min-h-[85vh] bg-gradient-to-br from-white via-slate-50 to-blue-50 overflow-hidden">
+      <section className="relative min-h-[70vh] sm:min-h-[85vh] bg-gradient-to-br from-[#ffffff] via-[#f2f2f2] to-[#c8d8e4] overflow-hidden">
         {/* Animated Background Elements */}
         <div className="absolute inset-0 opacity-10">
-          <div className="absolute top-20 left-10 w-24 h-24 rounded-full border-4 border-teal-600 animate-spin" style={{ animationDuration: '20s' }}></div>
-          <div className="absolute top-32 right-16 w-16 h-16 rounded-full border-2 border-emerald-400 animate-pulse"></div>
-          <div className="absolute bottom-24 left-1/3 w-12 h-12 rounded-full border-3 border-slate-400 animate-bounce"></div>
-          <div className="absolute top-1/3 right-1/4 w-20 h-20 border-2 border-blue-300 rotate-45 animate-pulse"></div>
+          <div className="absolute top-20 left-10 w-24 h-24 rounded-full border-4 border-[#2b6777] animate-spin" style={{ animationDuration: '20s' }}></div>
+          <div className="absolute top-32 right-16 w-16 h-16 rounded-full border-2 border-[#52ab98] animate-pulse"></div>
+          <div className="absolute bottom-24 left-1/3 w-12 h-12 rounded-full border-3 border-[#c8d8e4] animate-bounce"></div>
+          <div className="absolute top-1/3 right-1/4 w-20 h-20 border-2 border-[#c8d8e4] rotate-45 animate-pulse"></div>
         </div>
 
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 sm:pt-28 md:pt-36 pb-16 sm:pb-20 md:pb-24">
           <div className="text-center space-y-8 sm:space-y-10">
             {/* Breadcrumb for SEO */}
             <nav className="text-sm font-medium" aria-label="Breadcrumb">
-              <ol className="flex justify-center space-x-2 text-slate-600">
-                <li><a href="/" className="hover:text-teal-600 transition-colors duration-300">Home</a></li>
-                <li className="before:content-['/'] before:mx-2 text-slate-400">About Us</li>
+              <ol className="flex justify-center space-x-2 text-neutral-700">
+                <li><a href="/" className="hover:text-[#2b6777] transition-colors duration-300">Home</a></li>
+                <li className="before:content-['/'] before:mx-2 text-neutral-700">About Us</li>
               </ol>
             </nav>
 
             <div className="space-y-6 sm:space-y-8">
-              <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black text-teal-700 leading-tight">
+              <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black text-[#2b6777] leading-tight font-roboto">
                 ABOUT
-                <span className="block relative text-teal-600">
+                <span className="block relative text-[#2b6777] font-roboto">
                   Vittam Integrity Services
-                  <div className="absolute -bottom-2 sm:-bottom-3 left-1/2 transform -translate-x-1/2 w-24 sm:w-32 md:w-40 h-1.5 bg-emerald-400 animate-pulse rounded-full"></div>
+                  <div className="absolute -bottom-2 sm:-bottom-3 left-1/2 transform -translate-x-1/2 w-24 sm:w-32 md:w-40 h-1.5 bg-[#52ab98] animate-pulse rounded-full"></div>
                 </span>
               </h1>
               
-              <p className="text-lg sm:text-xl md:text-2xl text-slate-600 max-w-4xl mx-auto leading-relaxed font-medium">
+              <p className="text-lg sm:text-xl md:text-2xl text-neutral-700 max-w-4xl mx-auto leading-relaxed font-medium">
                 Mumbai's most trusted chartered accountancy firm with over 15 years of excellence 
                 in financial services, tax planning, and business consulting.
               </p>
@@ -487,9 +480,9 @@ const AboutPage = () => {
                 { value: "98%", label: "Success Rate" },
                 { value: "24/7", label: "Support" }
               ].map((stat, index) => (
-                <div key={index} className="text-center group cursor-pointer p-4 rounded-2xl hover:bg-white hover:shadow-lg transition-all duration-300">
-                  <div className="text-3xl sm:text-4xl md:text-5xl font-black text-teal-600 mb-3 transform group-hover:scale-110 transition-transform">{stat.value}</div>
-                  <div className="text-sm sm:text-base text-slate-600 font-bold uppercase tracking-wide">{stat.label}</div>
+                <div key={index} className="text-center group cursor-pointer p-4 rounded-2xl hover:bg-[#ffffff] hover:shadow-lg transition-all duration-300">
+                  <div className="text-3xl sm:text-4xl md:text-5xl font-black text-[#2b6777] mb-3 transform group-hover:scale-110 transition-transform">{stat.value}</div>
+                  <div className="text-sm sm:text-base text-neutral-700 font-bold uppercase tracking-wide">{stat.label}</div>
                 </div>
               ))}
             </div>
@@ -498,62 +491,62 @@ const AboutPage = () => {
       </section>
 
       {/* Our Story Section */}
-      <section className="py-16 sm:py-20 md:py-24 bg-slate-50" id="our-story">
+      <section className="py-16 sm:py-20 md:py-24 bg-[#f2f2f2]" id="our-story">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             <div className="space-y-8 sm:space-y-10">
               <div className="space-y-4">
-                <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-teal-700 leading-tight">
+                <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-[#2b6777] leading-tight">
                   OUR STORY &
-                  <span className="block text-teal-600">JOURNEY</span>
+                  <span className="block text-[#2b6777]">JOURNEY</span>
                 </h2>
-                <div className="w-20 sm:w-24 h-1.5 bg-emerald-400 rounded-full"></div>
+                <div className="w-20 sm:w-24 h-1.5 bg-[#52ab98] rounded-full"></div>
               </div>
               
-              <div className="space-y-6 text-base sm:text-lg md:text-xl text-slate-700 leading-relaxed">
+              <div className="space-y-6 text-base sm:text-lg md:text-xl text-neutral-700 leading-relaxed">
                 <p>
-                  Founded in <strong className="text-teal-600">2010</strong> by <strong className="text-teal-600">CA Sunita Kulthe</strong>, Vittam Integrity Services began as a small 
+                  Founded in <strong className="text-[#2b6777]">2010</strong> by <strong className="text-[#2b6777]">CA Sunita Kulthe</strong>, Vittam Integrity Services began as a small 
                   chartered accountancy practice in Mumbai with a simple mission: to provide honest, 
                   reliable, and expert financial services to businesses and individuals.
                 </p>
                 <p>
-                  Over the past <strong className="text-teal-600">15 years</strong>, we have grown from a single-person practice to 
-                  Mumbai's leading chartered accountancy firm, serving over <strong className="text-teal-600">500 satisfied clients</strong> 
+                  Over the past <strong className="text-[#2b6777]">15 years</strong>, we have grown from a single-person practice to 
+                  Mumbai's leading chartered accountancy firm, serving over <strong className="text-[#2b6777]">500 satisfied clients</strong> 
                   across various industries including manufacturing, IT, retail, and healthcare.
                 </p>
                 <p>
                   Our commitment to excellence, continuous learning, and client satisfaction has earned 
                   us recognition as one of the most trusted CA firms in Mumbai, with a 
-                  <strong className="text-teal-600">98% client retention rate</strong> and numerous industry awards.
+                  <strong className="text-[#2b6777]">98% client retention rate</strong> and numerous industry awards.
                 </p>
               </div>
 
               <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 pt-6">
-                <button className="bg-teal-600 text-white px-8 sm:px-10 py-4 sm:py-5 font-bold text-base sm:text-lg rounded-xl hover:bg-teal-700 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl">
+                <button className="bg-[#2b6777] text-[#ffffff] px-8 sm:px-10 py-4 sm:py-5 font-bold text-base sm:text-lg rounded-xl hover:bg-[#52ab98] transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl">
                   OUR SERVICES
                 </button>
-                <button className="border-2 border-teal-600 text-teal-600 px-8 sm:px-10 py-4 sm:py-5 font-bold text-base sm:text-lg rounded-xl hover:bg-teal-600 hover:text-white transition-all duration-300 shadow-lg">
+                <button className="border-2 border-[#2b6777] text-[#2b6777] px-8 sm:px-10 py-4 sm:py-5 font-bold text-base sm:text-lg rounded-xl hover:bg-[#2b6777] hover:text-[#ffffff] transition-all duration-300 shadow-lg">
                   MEET OUR TEAM
                 </button>
               </div>
             </div>
 
             <div className="relative">
-              <div className="bg-gradient-to-br from-teal-600 to-teal-700 p-6 sm:p-8 md:p-10 rounded-3xl transform hover:scale-105 transition-all duration-500 shadow-2xl">
-                <div className="bg-white p-6 sm:p-8 md:p-10 rounded-2xl space-y-6 sm:space-y-8">
+              <div className="bg-gradient-to-br from-[#2b6777] to-[#52ab98] p-6 sm:p-8 md:p-10 rounded-3xl transform hover:scale-105 transition-all duration-500 shadow-2xl">
+                <div className="bg-[#ffffff] p-6 sm:p-8 md:p-10 rounded-2xl space-y-6 sm:space-y-8">
                   <div className="text-center space-y-4 sm:space-y-6">
-                    <div className="w-20 sm:w-24 h-20 sm:h-24 bg-gradient-to-br from-teal-600 to-emerald-500 mx-auto flex items-center justify-center rounded-full shadow-lg">
-                      <Calculator className="w-10 sm:w-12 h-10 sm:h-12 text-white" />
+                    <div className="w-20 sm:w-24 h-20 sm:h-24 bg-gradient-to-br from-[#2b6777] to-[#52ab98] mx-auto flex items-center justify-center rounded-full shadow-lg">
+                      <Calculator className="w-10 sm:w-12 h-10 sm:h-12 text-[#ffffff]" />
                     </div>
-                    <h3 className="text-xl sm:text-2xl md:text-3xl font-black text-teal-700">ESTABLISHED 2010</h3>
-                    <p className="text-base sm:text-lg text-slate-600 font-medium">Mumbai's Premier CA Firm</p>
+                    <h3 className="text-xl sm:text-2xl md:text-3xl font-black text-[#2b6777]">ESTABLISHED 2010</h3>
+                    <p className="text-base sm:text-lg text-neutral-700 font-medium">Mumbai's Premier CA Firm</p>
                   </div>
                   
                   <div className="space-y-4 sm:space-y-5">
                     {["ICAI CERTIFIED", "ISO 9001:2015", "GST PRACTITIONER"].map((cert, index) => (
-                      <div key={index} className="flex items-center justify-between p-4 sm:p-5 border-2 border-slate-200 hover:border-emerald-400 rounded-xl transition-all group hover:bg-slate-50">
-                        <span className="font-bold text-teal-700 text-sm sm:text-base">{cert}</span>
-                        <CheckCircle className="w-5 sm:w-6 h-5 sm:h-6 text-emerald-500" />
+                      <div key={index} className="flex items-center justify-between p-4 sm:p-5 border-2 border-[#c8d8e4] hover:border-[#52ab98] rounded-xl transition-all group hover:bg-[#f2f2f2]">
+                        <span className="font-bold text-[#2b6777] text-sm sm:text-base">{cert}</span>
+                        <CheckCircle className="w-5 sm:w-6 h-5 sm:h-6 text-neutral-700" />
                       </div>
                     ))}
                   </div>
@@ -565,20 +558,20 @@ const AboutPage = () => {
       </section>
 
       {/* Mission, Vision, Values */}
-      <section className="py-16 sm:py-20 md:py-24 bg-white" id="mission-vision">
+      <section className="py-16 sm:py-20 md:py-24 bg-[#ffffff]" id="mission-vision">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center space-y-6 sm:space-y-8 mb-12 sm:mb-16 md:mb-20">
-            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-teal-700">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-[#2b6777]">
               OUR CORE VALUES
             </h2>
-            <p className="text-lg sm:text-xl md:text-2xl text-slate-600 max-w-4xl mx-auto font-medium">
+            <p className="text-lg sm:text-xl md:text-2xl text-neutral-700 max-w-4xl mx-auto font-medium">
               The principles that guide our every decision and client interaction
             </p>
           </div>
 
           {/* Tab Navigation */}
           <div className="flex justify-center mb-12 sm:mb-16">
-            <div className="bg-slate-100 p-2 sm:p-3 rounded-2xl flex flex-wrap justify-center gap-2 sm:gap-3 shadow-lg">
+            <div className="bg-[#f2f2f2] p-2 sm:p-3 rounded-2xl flex flex-wrap justify-center gap-2 sm:gap-3 shadow-lg">
               {[
                 { id: 'mission', label: 'MISSION', icon: Target },
                 { id: 'vision', label: 'VISION', icon: Eye },
@@ -589,8 +582,8 @@ const AboutPage = () => {
                   onClick={() => setActiveTab(tab.id)}
                   className={`${
                     activeTab === tab.id 
-                      ? 'bg-teal-600 text-white shadow-lg' 
-                      : 'bg-transparent text-teal-700 hover:bg-slate-200'
+                      ? 'bg-[#2b6777] text-[#ffffff] shadow-lg' 
+                      : 'bg-transparent text-[#2b6777] hover:bg-[#c8d8e4]'
                   } px-6 sm:px-8 md:px-10 py-3 sm:py-4 md:py-5 rounded-xl font-bold text-sm sm:text-base transition-all duration-300 flex items-center space-x-2 sm:space-x-3`}
                 >
                   <tab.icon className="w-5 sm:w-6 h-5 sm:h-6" />
@@ -604,11 +597,11 @@ const AboutPage = () => {
           <div className="max-w-5xl mx-auto">
             {activeTab === 'mission' && (
               <div className="text-center space-y-8 sm:space-y-10 animate-fadeIn">
-                <div className="w-20 sm:w-24 h-20 sm:h-24 bg-gradient-to-br from-teal-600 to-emerald-500 mx-auto rounded-full flex items-center justify-center shadow-xl">
-                  <Target className="w-10 sm:w-12 h-10 sm:h-12 text-white" />
+                <div className="w-20 sm:w-24 h-20 sm:h-24 bg-gradient-to-br from-[#2b6777] to-[#52ab98] mx-auto rounded-full flex items-center justify-center shadow-xl">
+                  <Target className="w-10 sm:w-12 h-10 sm:h-12 text-[#ffffff]" />
                 </div>
-                <h3 className="text-2xl sm:text-3xl md:text-4xl font-black text-teal-700">OUR MISSION</h3>
-                <p className="text-base sm:text-lg md:text-xl text-slate-700 leading-relaxed px-4 font-medium">
+                <h3 className="text-2xl sm:text-3xl md:text-4xl font-black text-[#2b6777]">OUR MISSION</h3>
+                <p className="text-base sm:text-lg md:text-xl text-neutral-700 leading-relaxed px-4 font-medium">
                   To empower businesses and individuals with expert financial guidance, innovative solutions, 
                   and unwavering integrity. We strive to be the most trusted chartered accountancy firm in Mumbai, 
                   helping our clients achieve financial success and regulatory compliance with confidence.
@@ -618,11 +611,11 @@ const AboutPage = () => {
 
             {activeTab === 'vision' && (
               <div className="text-center space-y-8 sm:space-y-10 animate-fadeIn">
-                <div className="w-20 sm:w-24 h-20 sm:h-24 bg-gradient-to-br from-teal-600 to-emerald-500 mx-auto rounded-full flex items-center justify-center shadow-xl">
-                  <Eye className="w-10 sm:w-12 h-10 sm:h-12 text-white" />
+                <div className="w-20 sm:w-24 h-20 sm:h-24 bg-gradient-to-br from-[#2b6777] to-[#52ab98] mx-auto rounded-full flex items-center justify-center shadow-xl">
+                  <Eye className="w-10 sm:w-12 h-10 sm:h-12 text-[#ffffff]" />
                 </div>
-                <h3 className="text-2xl sm:text-3xl md:text-4xl font-black text-teal-700">OUR VISION</h3>
-                <p className="text-base sm:text-lg md:text-xl text-slate-700 leading-relaxed px-4 font-medium">
+                <h3 className="text-2xl sm:text-3xl md:text-4xl font-black text-[#2b6777]">OUR VISION</h3>
+                <p className="text-base sm:text-lg md:text-xl text-neutral-700 leading-relaxed px-4 font-medium">
                   To be recognized as India's leading chartered accountancy firm, known for excellence, 
                   innovation, and client satisfaction. We envision a future where every business, 
                   regardless of size, has access to world-class financial expertise and strategic guidance.
@@ -632,10 +625,10 @@ const AboutPage = () => {
 
             {activeTab === 'values' && (
               <div className="text-center space-y-8 sm:space-y-10 animate-fadeIn">
-                <div className="w-20 sm:w-24 h-20 sm:h-24 bg-gradient-to-br from-teal-600 to-emerald-500 mx-auto rounded-full flex items-center justify-center shadow-xl">
-                  <Heart className="w-10 sm:w-12 h-10 sm:h-12 text-white" />
+                <div className="w-20 sm:w-24 h-20 sm:h-24 bg-gradient-to-br from-[#2b6777] to-[#52ab98] mx-auto rounded-full flex items-center justify-center shadow-xl">
+                  <Heart className="w-10 sm:w-12 h-10 sm:h-12 text-[#ffffff]" />
                 </div>
-                <h3 className="text-2xl sm:text-3xl md:text-4xl font-black text-teal-700">OUR VALUES</h3>
+                <h3 className="text-2xl sm:text-3xl md:text-4xl font-black text-[#2b6777]">OUR VALUES</h3>
                 <div className="grid md:grid-cols-2 gap-8 sm:gap-10 px-4">
                   {[
                     { icon: Shield, title: "INTEGRITY", desc: "Honest, transparent, and ethical in all our dealings" },
@@ -643,12 +636,12 @@ const AboutPage = () => {
                     { icon: Users, title: "CLIENT-FIRST", desc: "Your success is our priority and measure of achievement" },
                     { icon: TrendingUp, title: "INNOVATION", desc: "Embracing technology and modern financial solutions" }
                   ].map((value, index) => (
-                    <div key={index} className="space-y-4 text-left p-6 rounded-2xl hover:bg-slate-50 transition-all duration-300">
+                    <div key={index} className="space-y-4 text-left p-6 rounded-2xl hover:bg-[#f2f2f2] transition-all duration-300">
                       <div className="flex items-center space-x-3 sm:space-x-4">
-                        <value.icon className="w-6 sm:w-7 h-6 sm:h-7 text-emerald-500" />
-                        <span className="font-bold text-teal-700 text-lg sm:text-xl">{value.title}</span>
+                        <value.icon className="w-6 sm:w-7 h-6 sm:h-7 text-neutral-700" />
+                        <span className="font-bold text-[#2b6777] text-lg sm:text-xl">{value.title}</span>
                       </div>
-                      <p className="text-base sm:text-lg text-slate-600 font-medium">{value.desc}</p>
+                      <p className="text-base sm:text-lg text-neutral-700 font-medium">{value.desc}</p>
                     </div>
                   ))}
                 </div>
@@ -659,13 +652,13 @@ const AboutPage = () => {
       </section>
 
       {/* Why Choose Us */}
-      <section className="py-16 sm:py-20 md:py-24 bg-gradient-to-br from-teal-600 to-teal-700 text-white" id="why-choose-us">
+      <section className="py-16 sm:py-20 md:py-24  bg-[#2b6777] text-[#ffffff]" id="why-choose-us">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center space-y-6 sm:space-y-8 mb-12 sm:mb-16 md:mb-20">
             <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black">
               WHY CHOOSE Vittam Integrity Services?
             </h2>
-            <p className="text-lg sm:text-xl md:text-2xl text-slate-200 max-w-4xl mx-auto font-medium">
+            <p className="text-lg sm:text-xl md:text-2xl text-[#ffffff] max-w-4xl mx-auto font-medium">
               Here's what sets us apart from other chartered accountancy firms in Mumbai
             </p>
           </div>
@@ -703,13 +696,13 @@ const AboutPage = () => {
                 description: "98% client retention rate with 500+ satisfied clients who trust us with their financial matters."
               }
             ].map((item, index) => (
-            <div key={index} className="bg-teal-500 bg-opacity-20 backdrop-blur-lg p-6 sm:p-8 md:p-10 rounded-3xl hover:bg-opacity-30 transition-all duration-300 transform hover:scale-105 group border border-white border-opacity-30 shadow-md hover:shadow-xl">
+              <div key={index} className="bg-gradient-to-br from-[#52ab98] bg-opacity-20 backdrop-blur-lg p-6 sm:p-8 md:p-10 rounded-3xl hover:bg-opacity-30 transition-all duration-300 transform hover:scale-105 group border border-[#ffffff] border-opacity-30 shadow-md hover:shadow-xl">
                 <div className="space-y-6 sm:space-y-8">
-                  <div className="w-16 sm:w-20 h-16 sm:h-20 bg-grey bg-opacity-20 rounded-full flex items-center justify-center group-hover:rotate-12 transition-transform shadow-lg">
-                    <item.icon className="w-8 sm:w-10 h-8 sm:h-10 text-emerald-300" />
+                  <div className="w-16 sm:w-20 h-16 sm:h-20 bg-[#f2f2f2] bg-opacity-20 rounded-full flex items-center justify-center group-hover:rotate-12 transition-transform shadow-lg">
+                    <item.icon className="w-8 sm:w-10 h-8 sm:h-10 text-neutral-700" />
                   </div>
-                  <h3 className="text-lg sm:text-xl md:text-2xl font-black text-grey">{item.title}</h3>
-                  <p className="text-base sm:text-lg text-slate-600 leading-relaxed font-medium">{item.description}</p>
+                  <h3 className="text-lg sm:text-xl md:text-2xl font-black text-[#ffffff]">{item.title}</h3>
+                  <p className="text-base sm:text-lg text-[#ffffff] leading-relaxed font-medium">{item.description}</p>
                 </div>
               </div>
             ))}
@@ -718,13 +711,13 @@ const AboutPage = () => {
       </section>
 
       {/* Certifications & Awards */}
-      <section className="py-16 sm:py-20 md:py-24 bg-slate-50" id="certifications">
+      <section className="py-16 sm:py-20 md:py-24 bg-[#f2f2f2]" id="certifications">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center space-y-6 sm:space-y-8 mb-12 sm:mb-16 md:mb-20">
-            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-teal-700">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-[#2b6777]">
               CERTIFICATIONS & AWARDS
             </h2>
-            <p className="text-lg sm:text-xl md:text-2xl text-slate-600 max-w-4xl mx-auto font-medium">
+            <p className="text-lg sm:text-xl md:text-2xl text-neutral-700 max-w-4xl mx-auto font-medium">
               Recognized for excellence and compliance by leading industry bodies
             </p>
           </div>
@@ -737,13 +730,13 @@ const AboutPage = () => {
               { title: "BEST CA FIRM 2024", subtitle: "Mumbai Business Awards", icon: Star }
             ].map((cert, index) => (
               <div key={index} className="text-center group">
-                <div className="bg-white p-8 sm:p-10 border-4 border-slate-200 hover:border-emerald-400 rounded-3xl transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-2xl">
+            <div className="bg-[#ffffff] p-8 sm:p-10 border-4 border-[#c8d8e4] hover:border-[#52ab98] rounded-3xl transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-2xl">
                   <div className="space-y-4 sm:space-y-6">
-                    <div className="w-16 sm:w-20 h-16 sm:h-20 bg-gradient-to-br from-teal-600 to-emerald-500 mx-auto rounded-full flex items-center justify-center group-hover:rotate-12 transition-transform shadow-lg">
-                      <cert.icon className="w-8 sm:w-10 h-8 sm:h-10 text-white" />
+                    <div className="w-16 sm:w-20 h-16 sm:h-20 bg-gradient-to-br from-[#2b6777] to-[#52ab98] mx-auto rounded-full flex items-center justify-center group-hover:rotate-12 transition-transform shadow-lg">
+                      <cert.icon className="w-8 sm:w-10 h-8 sm:h-10 text-[#ffffff]" />
                     </div>
-                    <h3 className="text-lg sm:text-xl font-black text-teal-700">{cert.title}</h3>
-                    <p className="text-sm sm:text-base text-slate-600 font-medium">{cert.subtitle}</p>
+                    <h3 className="text-lg sm:text-xl font-black text-[#2b6777]">{cert.title}</h3>
+                    <p className="text-sm sm:text-base text-neutral-700 font-medium">{cert.subtitle}</p>
                   </div>
                 </div>
               </div>
@@ -753,38 +746,38 @@ const AboutPage = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 sm:py-20 md:py-24 bg-white">
+      <section className="py-16 sm:py-20 md:py-24 bg-[#ffffff]">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="space-y-8 sm:space-y-10">
-            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-teal-700 leading-tight">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-[#2b6777] leading-tight">
               READY TO WORK WITH
-              <span className="block text-teal-600">MUMBAI'S BEST CA FIRM?</span>
+              <span className="block text-[#2b6777]">MUMBAI'S BEST CA FIRM?</span>
             </h2>
             
-            <p className="text-lg sm:text-xl md:text-2xl text-slate-600 leading-relaxed font-medium max-w-4xl mx-auto">
+            <p className="text-lg sm:text-xl md:text-2xl text-neutral-700 leading-relaxed font-medium max-w-4xl mx-auto">
               Join 500+ satisfied clients who trust Vittam for their financial success. 
               Get expert chartered accountant services with guaranteed compliance and peace of mind.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center pt-8 sm:pt-10">
-              <button className="bg-teal-600 text-white px-10 sm:px-12 md:px-14 py-5 sm:py-6 md:py-7 font-black text-base sm:text-lg md:text-xl rounded-xl hover:bg-teal-700 transition-all duration-300 transform hover:scale-105 flex items-center justify-center space-x-3 shadow-xl hover:shadow-2xl">
+              <button className="bg-[#2b6777] text-[#ffffff] px-10 sm:px-12 md:px-14 py-5 sm:py-6 md:py-7 font-black text-base sm:text-lg md:text-xl rounded-xl hover:bg-[#52ab98] transition-all duration-300 transform hover:scale-105 flex items-center justify-center space-x-3 shadow-xl hover:shadow-2xl">
                 <span>BOOK FREE CONSULTATION</span>
                 <ArrowRight className="w-5 sm:w-6 md:w-7 h-5 sm:h-6 md:h-7" />
               </button>
-              <button className="border-2 border-teal-600 text-teal-600 px-10 sm:px-12 md:px-14 py-5 sm:py-6 md:py-7 font-black text-base sm:text-lg md:text-xl rounded-xl hover:bg-teal-600 hover:text-white transition-all duration-300 shadow-xl">
+              <button className="border-2 border-[#2b6777] text-[#2b6777] px-10 sm:px-12 md:px-14 py-5 sm:py-6 md:py-7 font-black text-base sm:text-lg md:text-xl rounded-xl hover:bg-[#2b6777] hover:text-[#ffffff] transition-all duration-300 shadow-xl">
                 CALL +91 xxxxx 43210
               </button>
             </div>
 
-            <div className="grid grid-cols-3 gap-6 sm:gap-8 md:gap-10 pt-12 sm:pt-16 border-t-4 border-emerald-400 rounded-full">
+            <div className="grid grid-cols-3 gap-6 sm:gap-8 md:gap-10 pt-12 sm:pt-16 border-t-4 border-[#52ab98] rounded-full">
               {[
                 { value: "FREE", label: "Initial Consultation" },
                 { value: "24HR", label: "Response Time" },
                 { value: "100%", label: "Satisfaction Guarantee" }
               ].map((item, index) => (
-                <div key={index} className="text-center p-4 rounded-2xl hover:bg-slate-50 transition-all duration-300">
-                  <div className="text-2xl sm:text-3xl md:text-4xl font-black text-teal-600 mb-3">{item.value}</div>
-                  <div className="text-sm sm:text-base text-slate-600 font-bold uppercase tracking-wide">{item.label}</div>
+                <div key={index} className="text-center p-4 rounded-2xl hover:bg-[#f2f2f2] transition-all duration-300">
+                  <div className="text-2xl sm:text-3xl md:text-4xl font-black text-[#2b6777] mb-3">{item.value}</div>
+                  <div className="text-sm sm:text-base text-neutral-700 font-bold uppercase tracking-wide">{item.label}</div>
                 </div>
               ))}
             </div>

@@ -10,6 +10,10 @@ export default {
         'fade-in': 'fadeIn 0.5s ease-in-out',
         'hammer-hit': 'hammerHit 0.35 ease-in-out'
       },
+                    fontFamily: {
+        roboto: ['Roboto', 'sans-serif'],
+
+      },
       keyframes: {
         fadeIn: {
           '0%': { opacity: '0', transform: 'translateY(10px)' },
@@ -22,6 +26,7 @@ export default {
           '100%': { tranform: 'translateY(0) rotate(0deg) scale(1)' },
 
         },
+        
 
       },
     },
