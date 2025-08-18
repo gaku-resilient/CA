@@ -144,28 +144,28 @@ const ContactPage = () => {
       title: 'PHONE',
       primary: '+91 98765 43210',
       secondary: '+91 22 2345 6789',
-      color: 'from-[#2b6777] to-[#52ab98]'
+      color: 'bg-black'
     },
     {
       icon: Mail,
       title: 'EMAIL',
       primary: 'info@vittam.com',
       secondary: 'ca@vittam.com',
-      color: 'from-[#52ab98] to-[#2b6777]'
+      color: 'bg-black'
     },
     {
       icon: MapPin,
       title: 'OFFICE',
       primary: '123 Business District',
       secondary: 'Nariman Point, Mumbai 400021',
-      color: 'from-[#2b6777] to-[#52ab98]'
+      color: 'bg-black'
     },
     {
       icon: Clock,
       title: 'HOURS',
       primary: 'Mon-Fri: 9:00 AM - 7:00 PM',
       secondary: 'Sat: 9:00 AM - 5:00 PM',
-      color: 'from-[#52ab98] to-[#2b6777]'
+      color: 'bg-black'
     }
   ];
 
@@ -179,7 +179,7 @@ const ContactPage = () => {
 
       <div className="fixed inset-0 pointer-events-none overflow-hidden opacity-5 z-0">
         <div 
-          className="absolute top-20 left-10 w-32 h-32 rounded-full border-4 border-[#2b6777]"
+          className="absolute top-20 left-10 w-32 h-32 rounded-full border-4 border-[#0d53a3]"
           style={{
             animation: 'vittam-spin 25s linear infinite',
             transform: `translateY(${isScrolled ? -20 : 0}px)`,
@@ -187,7 +187,7 @@ const ContactPage = () => {
           }}
         ></div>
         <div 
-          className="absolute top-1/3 right-16 w-24 h-24 rounded-full border-3 border-[#52ab98]"
+          className="absolute top-1/3 right-16 w-24 h-24 rounded-full border-3 border-[#4676b5]"
           style={{
             animation: 'vittam-pulse 3s ease-in-out infinite',
             transform: `translateX(${isScrolled ? 15 : 0}px)`,
@@ -203,7 +203,7 @@ const ContactPage = () => {
           }}
         ></div>
         <div 
-          className="absolute top-1/2 right-1/3 w-16 h-16 rounded-full border-2 border-[#2b6777]"
+          className="absolute top-1/2 right-1/3 w-16 h-16 rounded-full border-2 border-[#2b4677]"
           style={{
             animation: 'vittam-pulse 2.5s ease-in-out infinite reverse',
             transform: `scale(${isScrolled ? 1.2 : 1})`,
@@ -217,17 +217,17 @@ const ContactPage = () => {
           <div className="text-center space-y-8 sm:space-y-10" data-animate>
             <nav className="text-sm font-medium" aria-label="Breadcrumb">
               <ol className="flex justify-center space-x-2 text-neutral-700">
-                <li><a href="/" className="hover:text-[#2b6777] transition-colors duration-300" aria-label="Go to homepage">Home</a></li>
+                <li><a href="/" className="hover:text-[#2b5477] transition-colors duration-300" aria-label="Go to homepage">Home</a></li>
                 <li className="before:content-['/'] before:mx-2 text-neutral-700" aria-current="page">Contact Us</li>
               </ol>
             </nav>
 
             <div className="space-y-6 sm:space-y-8">
-              <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black text-[#2b6777] leading-tight font-roboto">
+              <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black text-black leading-tight font-roboto">
                 CONTACT
-                <span className="block relative text-[#2b6777] font-roboto">
+                <span className="block relative text-black font-roboto">
                   Vittam Integrity Services
-                  <div className="absolute -bottom-2 sm:-bottom-3 left-1/2 transform -translate-x-1/2 w-24 sm:w-32 md:w-40 h-1.5 bg-[#52ab98] animate-pulse rounded-full"></div>
+                  <div className="absolute -bottom-2 sm:-bottom-3 left-1/2 transform -translate-x-1/2 w-24 sm:w-32 md:w-40 h-1.5 bg-[#182d41] animate-pulse rounded-full"></div>
                 </span>
               </h1>
               
@@ -245,7 +245,7 @@ const ContactPage = () => {
                 { value: "500+", label: "Happy Clients" }
               ].map((stat, index) => (
                 <div key={index} className="text-center group cursor-pointer p-4 rounded-2xl hover:bg-[#ffffff] hover:shadow-lg transition-all duration-300">
-                  <div className="text-3xl sm:text-4xl md:text-5xl font-black text-[#2b6777] mb-3 transform group-hover:scale-110 transition-transform">{stat.value}</div>
+                  <div className="text-3xl sm:text-4xl md:text-5xl font-black text-black mb-3 transform group-hover:scale-110 transition-transform">{stat.value}</div>
                   <div className="text-sm sm:text-base text-neutral-700 font-bold uppercase tracking-wide">{stat.label}</div>
                 </div>
               ))}
@@ -257,7 +257,7 @@ const ContactPage = () => {
       <section className="py-16 sm:py-20 md:py-24 bg-[#f2f2f2]" id="contact-info">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center space-y-6 sm:space-y-8 mb-12 sm:mb-16 md:mb-20" data-animate>
-            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-[#2b6777]">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-black">
               GET IN TOUCH
             </h2>
             <p className="text-lg sm:text-xl md:text-2xl text-neutral-700 max-w-4xl mx-auto font-medium">
@@ -282,11 +282,11 @@ const ContactPage = () => {
                     <div className={`w-16 sm:w-20 h-16 sm:h-20 bg-gradient-to-br ${info.color} mx-auto flex items-center justify-center rounded-full shadow-lg group-hover:rotate-12 transition-transform`}>
                       <info.icon className="w-8 sm:w-10 h-8 sm:h-10 text-[#ffffff]" />
                     </div>
-                    <h3 className="text-xl sm:text-2xl font-black text-[#2b6777]">{info.title}</h3>
+                    <h3 className="text-xl sm:text-2xl font-black text-black">{info.title}</h3>
                   </div>
                   
                   <div className="space-y-3 text-center">
-                    <p className="text-base sm:text-lg font-bold text-[#2b6777]">{info.primary}</p>
+                    <p className="text-base sm:text-lg font-bold text-black">{info.primary}</p>
                     <p className="text-sm sm:text-base text-neutral-700 font-medium">{info.secondary}</p>
                   </div>
                 </div>
@@ -301,10 +301,10 @@ const ContactPage = () => {
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16">
             <div className="space-y-8 sm:space-y-10" data-animate>
               <div className="space-y-4">
-                <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-[#2b6777] leading-tight">
+                <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-black leading-tight">
                   SEND US A MESSAGE
                 </h2>
-                <div className="w-20 sm:w-24 h-1.5 bg-[#52ab98] rounded-full"></div>
+                <div className="w-20 sm:w-24 h-1.5 bg-[#4c7cb9] rounded-full"></div>
                 <p className="text-base sm:text-lg text-neutral-700 font-medium">
                   Fill out the form below and we'll get back to you within 24 hours with expert advice tailored to your needs.
                 </p>
@@ -312,13 +312,13 @@ const ContactPage = () => {
 
               <form onSubmit={handleSubmit} className="space-y-6 sm:space-y-8">
                 {formStatus.message && (
-                  <div className={`text-center p-4 rounded-xl ${formStatus.message.includes('success') ? 'bg-green-100 text-green-700' : 'bg-red-100 text-red-700'}`}>
+                  <div className={`text-center p-4 rounded-xl ${formStatus.message.includes('success') ? 'bg-green-100 text-blue-400' : 'bg-red-100 text-red-700'}`}>
                     {formStatus.message}
                   </div>
                 )}
                 <div className="grid sm:grid-cols-2 gap-6">
                   <div className="space-y-2">
-                    <label className="text-sm font-bold text-[#2b6777] uppercase tracking-wide" htmlFor="contactName">Contact Name *</label>
+                    <label className="text-sm font-bold text-black uppercase tracking-wide" htmlFor="contactName">Contact Name *</label>
                     <div className="relative">
                       <User className="absolute left-4 top-1/2 transform -translate-y-1/2 w-5 h-5 text-neutral-700" />
                       <input
@@ -329,14 +329,14 @@ const ContactPage = () => {
                         onChange={handleInputChange}
                         required
                         aria-required="true"
-                        className="w-full pl-12 pr-4 py-4 border-2 border-[#c8d8e4] rounded-xl focus:border-[#52ab98] focus:outline-none transition-all duration-300 text-base font-medium"
+                        className="w-full pl-12 pr-4 py-4 border-2 border-[#c8d8e4] rounded-xl focus:border-[#5273ab] focus:outline-none transition-all duration-300 text-base font-medium"
                         placeholder="Enter your full name"
                       />
                     </div>
                   </div>
 
                   <div className="space-y-2">
-                    <label className="text-sm font-bold text-[#2b6777] uppercase tracking-wide" htmlFor="contactEmail">Contact Email *</label>
+                    <label className="text-sm font-bold text-black uppercase tracking-wide" htmlFor="contactEmail">Contact Email *</label>
                     <div className="relative">
                       <Mail className="absolute left-4 top-1/2 transform -translate-y-1/2 w-5 h-5 text-neutral-700" />
                       <input
@@ -347,7 +347,7 @@ const ContactPage = () => {
                         onChange={handleInputChange}
                         required
                         aria-required="true"
-                        className="w-full pl-12 pr-4 py-4 border-2 border-[#c8d8e4] rounded-xl focus:border-[#52ab98] focus:outline-none transition-all duration-300 text-base font-medium"
+                        className="w-full pl-12 pr-4 py-4 border-2 border-[#c8d8e4] rounded-xl focus:border-[#5277ab] focus:outline-none transition-all duration-300 text-base font-medium"
                         placeholder="Enter your email"
                       />
                     </div>
@@ -356,7 +356,7 @@ const ContactPage = () => {
 
                 <div className="grid sm:grid-cols-2 gap-6">
                   <div className="space-y-2">
-                    <label className="text-sm font-bold text-[#2b6777] uppercase tracking-wide" htmlFor="contactNumber">Contact Number *</label>
+                    <label className="text-sm font-bold text-black uppercase tracking-wide" htmlFor="contactNumber">Contact Number *</label>
                     <div className="relative">
                       <Phone className="absolute left-4 top-1/2 transform -translate-y-1/2 w-5 h-5 text-neutral-700" />
                       <input
@@ -367,14 +367,14 @@ const ContactPage = () => {
                         onChange={handleInputChange}
                         required
                         aria-required="true"
-                        className="w-full pl-12 pr-4 py-4 border-2 border-[#c8d8e4] rounded-xl focus:border-[#52ab98] focus:outline-none transition-all duration-300 text-base font-medium"
+                        className="w-full pl-12 pr-4 py-4 border-2 border-[#335c7a] rounded-xl focus:border-[#527aab] focus:outline-none transition-all duration-300 text-base font-medium"
                         placeholder="+91 XXXXX XXXXX"
                       />
                     </div>
                   </div>
 
                   <div className="space-y-2">
-                    <label className="text-sm font-bold text-[#2b6777] uppercase tracking-wide" htmlFor="natureOfClient">Nature of Client *</label>
+                    <label className="text-sm font-bold text-black uppercase tracking-wide" htmlFor="natureOfClient">Nature of Client *</label>
                     <select
                       id="natureOfClient"
                       name="natureOfClient"
@@ -382,7 +382,7 @@ const ContactPage = () => {
                       onChange={handleInputChange}
                       required
                       aria-required="true"
-                      className="w-full px-4 py-4 border-2 border-[#c8d8e4] rounded-xl focus:border-[#52ab98] focus:outline-none transition-all duration-300 text-base font-medium"
+                      className="w-full px-4 py-4 border-2 border-[#c8d8e4] rounded-xl focus:border-[#5280ab] focus:outline-none transition-all duration-300 text-base font-medium"
                     >
                       <option value="">Select client type</option>
                       {natureOfClientOptions.map((option, index) => (
@@ -393,7 +393,7 @@ const ContactPage = () => {
                 </div>
 
                 <div className="space-y-2">
-                  <label className="text-sm font-bold text-[#2b6777] uppercase tracking-wide" htmlFor="typeOfService">Type of Service *</label>
+                  <label className="text-sm font-bold text-black uppercase tracking-wide" htmlFor="typeOfService">Type of Service *</label>
                   <select
                     id="typeOfService"
                     name="typeOfService"
@@ -401,7 +401,7 @@ const ContactPage = () => {
                     onChange={handleInputChange}
                     required
                     aria-required="true"
-                    className="w-full px-4 py-4 border-2 border-[#c8d8e4] rounded-xl focus:border-[#52ab98] focus:outline-none transition-all duration-300 text-base font-medium"
+                    className="w-full px-4 py-4 border-2 border-[#c8d8e4] rounded-xl focus:border-[#5283ab] focus:outline-none transition-all duration-300 text-base font-medium"
                   >
                     <option value="">Select a service</option>
                     {services.map((service, index) => (
@@ -411,7 +411,7 @@ const ContactPage = () => {
                 </div>
 
                 <div className="space-y-2">
-                  <label className="text-sm font-bold text-[#2b6777] uppercase tracking-wide" htmlFor="serviceBrief">Nature of Service in Brief (100 words max)</label>
+                  <label className="text-sm font-bold text-black uppercase tracking-wide" htmlFor="serviceBrief">Nature of Service in Brief (100 words max)</label>
                   <div className="relative">
                     <MessageSquare className="absolute left-4 top-6 w-5 h-5 text-neutral-700" />
                     <textarea
@@ -420,7 +420,7 @@ const ContactPage = () => {
                       value={formData.serviceBrief}
                       onChange={handleInputChange}
                       rows="5"
-                      className="w-full pl-12 pr-4 py-4 border-2 border-[#c8d8e4] rounded-xl focus:border-[#52ab98] focus:outline-none transition-all duration-300 text-base font-medium resize-none"
+                      className="w-full pl-12 pr-4 py-4 border-2 border-[#c8d8e4] rounded-xl focus:border-[#528fab] focus:outline-none transition-all duration-300 text-base font-medium resize-none"
                       placeholder="Describe your requirements (100 words max)..."
                     ></textarea>
                     <div className="text-sm text-neutral-700 text-right">
@@ -432,7 +432,7 @@ const ContactPage = () => {
                 <button
                   type="submit"
                   disabled={formStatus.loading}
-                  className={`w-full bg-[#2b6777] text-[#ffffff] px-8 py-5 font-black text-lg rounded-xl hover:bg-[#52ab98] transition-all duration-300 transform hover:scale-105 flex items-center justify-center space-x-3 shadow-xl hover:shadow-2xl ${
+                  className={`w-full bg-[#19426c] text-[#ffffff] px-8 py-5 font-black text-lg rounded-xl hover:bg-[#5282ab] transition-all duration-300 transform hover:scale-105 flex items-center justify-center space-x-3 shadow-xl hover:shadow-2xl ${
                     formStatus.loading ? 'opacity-50 cursor-not-allowed' : ''
                   }`}
                   aria-label="Submit contact form"
@@ -443,7 +443,7 @@ const ContactPage = () => {
                 </button>
 
                 <div className="flex items-center justify-center space-x-2 text-sm text-neutral-700">
-                  <Shield className="w-4 h-4 text-[#52ab98]" />
+                  <Shield className="w-4 h-4 text-[#19426c]" />
                   <span>Your information is secure and confidential</span>
                 </div>
               </form>
@@ -451,19 +451,19 @@ const ContactPage = () => {
 
             <div className="space-y-8 sm:space-y-10" data-animate>
               <div className="space-y-4">
-                <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-[#2b6777] leading-tight">
+                <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-black leading-tight">
                   VISIT OUR OFFICE
                 </h2>
-                <div className="w-20 sm:w-24 h-1.5 bg-[#52ab98] rounded-full"></div>
+                <div className="w-20 sm:w-24 h-1.5 bg-[#19426c] rounded-full"></div>
               </div>
 
-              <div className="bg-gradient-to-br from-[#2b6777] to-[#52ab98] p-1 rounded-3xl shadow-2xl">
+              <div className="bg-gradient-to-br from-[#19426c] to-[#5289ab] p-1 rounded-3xl shadow-2xl">
                 <div className="bg-[#f2f2f2] rounded-3xl p-8 h-80 flex items-center justify-center">
                   <div className="text-center space-y-4">
-                    <MapPin className="w-16 h-16 text-[#2b6777] mx-auto" />
-                    <h3 className="text-2xl font-black text-[#2b6777]">INTERACTIVE MAP</h3>
+                    <MapPin className="w-16 h-16 text-black mx-auto" />
+                    <h3 className="text-2xl font-black text-black">INTERACTIVE MAP</h3>
                     <p className="text-lg text-neutral-700 font-medium">123 Business District, Nariman Point<br />Mumbai, Maharashtra 400021</p>
-                    <button className="bg-[#2b6777] text-[#ffffff] px-6 py-3 rounded-xl font-bold hover:bg-[#52ab98] transition-all duration-300" aria-label="Get directions to office">
+                    <button className="bg-[#204474] text-[#ffffff] px-6 py-3 rounded-xl font-bold hover:bg-[#5286ab] transition-all duration-300" aria-label="Get directions to office">
                       GET DIRECTIONS
                     </button>
                   </div>
@@ -478,8 +478,8 @@ const ContactPage = () => {
                   { icon: CheckCircle, title: "Same Day Response", desc: "Quick turnaround" }
                 ].map((feature, index) => (
                   <div key={index} className="bg-[#f2f2f2] p-6 rounded-2xl hover:bg-[#ffffff] hover:shadow-lg transition-all duration-300 text-center space-y-3">
-                    <feature.icon className="w-8 h-8 text-[#2b6777] mx-auto" />
-                    <h4 className="font-bold text-[#2b6777] text-sm">{feature.title}</h4>
+                    <feature.icon className="w-8 h-8 text-black mx-auto" />
+                    <h4 className="font-bold text-black text-sm">{feature.title}</h4>
                     <p className="text-xs text-neutral-700">{feature.desc}</p>
                   </div>
                 ))}
@@ -489,7 +489,7 @@ const ContactPage = () => {
         </div>
       </section>
 
-      <section className="py-16 sm:py-20 md:py-24 bg-[#2b6777] text-[#ffffff]" id="why-contact">
+      <section className="py-16 sm:py-20 md:py-24 bg-[#2b5277] text-[#ffffff]" id="why-contact">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center space-y-6 sm:space-y-8 mb-12 sm:mb-16 md:mb-20" data-animate>
             <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black">
@@ -520,12 +520,12 @@ const ContactPage = () => {
             ].map((item, index) => (
               <div 
                 key={index} 
-                className="bg-gradient-to-br from-[#52ab98] bg-opacity-20 backdrop-blur-lg p-8 rounded-3xl hover:bg-opacity-30 transition-all duration-300 transform hover:scale-105 group border border-[#ffffff] border-opacity-30 shadow-md hover:shadow-xl"
+                className="bg-gradient-to-br from-[#5292ab] bg-opacity-20 backdrop-blur-lg p-8 rounded-3xl hover:bg-opacity-30 transition-all duration-300 transform hover:scale-105 group border border-[#ffffff] border-opacity-30 shadow-md hover:shadow-xl"
                 data-animate
               >
                 <div className="space-y-6">
                   <div className="w-16 h-16 bg-[#ffffff] bg-opacity-20 rounded-full flex items-center justify-center group-hover:rotate-12 transition-transform shadow-lg">
-                    <item.icon className="w-8 h-8 text-[#ffffff]" />
+                    <item.icon className="w-8 h-8 text-[#072a35]" />
                   </div>
                   <h3 className="text-xl font-black">{item.title}</h3>
                   <p className="text-base leading-relaxed font-medium opacity-90">{item.description}</p>
@@ -539,7 +539,7 @@ const ContactPage = () => {
       <section className="py-16 sm:py-20 md:py-24 bg-[#f2f2f2]" id="faq">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center space-y-6 sm:space-y-8 mb-12 sm:mb-16" data-animate>
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-[#2b6777]">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-black">
               FREQUENTLY ASKED QUESTIONS
             </h2>
             <p className="text-lg sm:text-xl text-neutral-700 font-medium">
@@ -567,7 +567,7 @@ const ContactPage = () => {
               }
             ].map((faq, index) => (
               <div key={index} className="bg-[#ffffff] p-6 sm:p-8 rounded-2xl border-2 border-[#c8d8e4] hover:border-[#52ab98] transition-all duration-300 shadow-lg hover:shadow-xl">
-                <h3 className="text-lg sm:text-xl font-black text-[#2b6777] mb-4">{faq.question}</h3>
+                <h3 className="text-lg sm:text-xl font-black text-black mb-4">{faq.question}</h3>
                 <p className="text-base sm:text-lg text-neutral-700 leading-relaxed font-medium">{faq.answer}</p>
               </div>
             ))}
@@ -578,9 +578,9 @@ const ContactPage = () => {
       <section className="py-16 sm:py-20 md:py-24 bg-[#ffffff]">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center" data-animate>
           <div className="space-y-8 sm:space-y-10">
-            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-[#2b6777] leading-tight">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-black leading-tight">
               READY TO GET
-              <span className="block text-[#2b6777]">STARTED?</span>
+              <span className="block text-black">STARTED?</span>
             </h2>
             
             <p className="text-lg sm:text-xl md:text-2xl text-neutral-700 leading-relaxed font-medium max-w-4xl mx-auto">
@@ -589,11 +589,11 @@ const ContactPage = () => {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center pt-8">
-              <button className="bg-[#2b6777] text-[#ffffff] px-12 py-6 font-black text-xl rounded-xl hover:bg-[#52ab98] transition-all duration-300 transform hover:scale-105 flex items-center justify-center space-x-3 shadow-xl hover:shadow-2xl" aria-label="Call now to contact us">
+              <button className="bg-[#1d3f6e] text-[#ffffff] px-12 py-6 font-black text-xl rounded-xl hover:bg-[#5280ab] transition-all duration-300 transform hover:scale-105 flex items-center justify-center space-x-3 shadow-xl hover:shadow-2xl" aria-label="Call now to contact us">
                 <Phone className="w-6 h-6" />
                 <span>CALL NOW</span>
               </button>
-              <button className="border-2 border-[#2b6777] text-[#2b6777] px-12 py-6 font-black text-xl rounded-xl hover:bg-[#2b6777] hover:text-[#ffffff] transition-all duration-300 shadow-xl" aria-label="Book a consultation">
+              <button className="border-2 border-[#2b6777] text-black px-12 py-6 font-black text-xl rounded-xl hover:bg-[#2b4d77] hover:text-[#ffffff] transition-all duration-300 shadow-xl" aria-label="Book a consultation">
                 BOOK CONSULTATION
               </button>
             </div>

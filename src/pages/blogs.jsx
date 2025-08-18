@@ -18,6 +18,7 @@ import {
 const BlogFrontend = () => {
   // Sample blog data - in real app, this would come from an API
   const [blogs, setBlogs] = useState([
+    
     {
       id: 1,
       title: "Understanding Tax Implications of Remote Work",
@@ -34,7 +35,22 @@ const BlogFrontend = () => {
       featured: true,
       image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=400&fit=crop"
     },
-    
+    {
+      id: 2,
+      title: "Understanding Tax Implications of Remote Work",
+      excerpt: "Navigate the complex world of tax obligations when working from multiple states or countries. Learn about residency rules, state tax nexus, and how to properly document your work locations.",
+      content: "Remote work has revolutionized how we approach our careers, but it has also introduced complex tax considerations that many professionals overlook. When you work from different states or countries, you may be subject to multiple tax jurisdictions...",
+      author: "Sarah Johnson",
+      authorRole: "Senior Tax Consultant",
+      date: "2025-01-15",
+      readTime: "8 min read",
+      category: "Tax Planning",
+      tags: ["Remote Work", "Tax Law", "Digital Nomads"],
+      views: 2847,
+      likes: 156,
+      featured: false,
+      image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=400&fit=crop"
+    },
   ]);
 
   const [selectedBlog, setSelectedBlog] = useState(null);
@@ -157,19 +173,6 @@ const BlogFrontend = () => {
                           #{tag}
                         </span>
                       ))}
-                    </div>
-                    <div className="flex items-center space-x-4">
-                      <button
-                        onClick={() => handleLike(selectedBlog.id)}
-                        className="flex items-center space-x-2 text-neutral-600 hover:text-red-500 transition-colors"
-                      >
-                        <Heart className="w-5 h-5" />
-                        <span>{selectedBlog.likes}</span>
-                      </button>
-                      <button className="flex items-center space-x-2 text-neutral-600 hover:text-[#2b6777] transition-colors">
-                        <Share2 className="w-5 h-5" />
-                        <span>Share</span>
-                      </button>
                     </div>
                   </div>
                 </div>

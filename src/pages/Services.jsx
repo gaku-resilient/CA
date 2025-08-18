@@ -1017,11 +1017,11 @@ const ServicesPage = () => {
       <section className="relative min-h-[70vh] bg-[#FFFFFF] overflow-hidden" id="hero">
         {/* Animated Background */}
         <div className="absolute inset-0 opacity-5">
-          <div className="absolute top-10 left-10 w-32 h-32 border-2 border-[#008080] rounded-full animate-spin" style={{ animationDuration: '20s' }}></div>
+          <div className="absolute top-10 left-10 w-32 h-32 border-2 border-black rounded-full animate-spin" style={{ animationDuration: '20s' }}></div>
           <div className="absolute top-32 right-16 w-24 h-24 border border-[#87CEEB] rounded-full animate-pulse"></div>
           <div className="absolute bottom-20 left-1/4 w-16 h-16 border-2 border-[#87CEEB] rounded-full animate-bounce"></div>
           <div className="absolute top-1/2 right-1/4 w-20 h-20 border border-[#87CEEB] animate-spin" style={{ animationDuration: '15s' }}></div>
-          <div className="absolute bottom-32 right-10 w-28 h-28 border border-[#008080] opacity-20 animate-pulse"></div>
+          <div className="absolute bottom-32 right-10 w-28 h-28 border border-black opacity-20 animate-pulse"></div>
         </div>
 
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 sm:pt-28 pb-16 sm:pb-20">
@@ -1029,13 +1029,13 @@ const ServicesPage = () => {
             {/* Breadcrumb */}
             <nav className="text-sm font-medium" aria-label="Breadcrumb">
               <ol className="flex justify-center space-x-2 text-neutral-700">
-                <li><a href="/" className="hover:text-[#2b6777] transition-colors">Home</a></li>
+                <li><a href="/" className="hover:text-black transition-colors">Home</a></li>
                 <li className="before:content-['/'] before:mx-2">Services</li>
               </ol>
             </nav>
 
             <div className={`space-y-6 transition-all duration-1000 ${isVisible.hero ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-              <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black text-[#2b6777] leading-tight">
+              <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black text-black leading-tight">
                 Kulthe & Associates
                 <span className="block relative">
                   PROFESSIONAL CA SERVICES
@@ -1058,7 +1058,7 @@ const ServicesPage = () => {
                 { value: "24/7", label: "Support" }
               ].map((stat, index) => (
                 <div key={index} className={`text-center group cursor-pointer transition-all duration-500 delay-${index * 100} ${isVisible.hero ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-5'}`}>
-                  <div className="text-3xl sm:text-4xl font-black text-[#2b6777] mb-2 transform group-hover:scale-110 transition-transform">{stat.value}</div>
+                  <div className="text-3xl sm:text-4xl font-black text-black mb-2 transform group-hover:scale-110 transition-transform">{stat.value}</div>
                   <div className="text-sm text-neutral-700 font-bold uppercase">{stat.label}</div>
                 </div>
               ))}
@@ -1071,7 +1071,7 @@ const ServicesPage = () => {
       <section className="py-16 bg-[#FFFFFF]" id="services-nav">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center space-y-6 mb-12">
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-[#2b6777]">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-black">
               OUR SERVICE CATEGORIES
             </h2>
             <p className="text-lg text-neutral-700 max-w-3xl mx-auto">
@@ -1087,19 +1087,19 @@ const ServicesPage = () => {
                   key={key}
                   onClick={() => setActiveCategory(key)}
                   className={`${service.color} ${service.borderColor} border-2 p-6 cursor-pointer transition-all duration-300 transform hover:scale-105 hover:shadow-lg ${
-                    activeCategory === key ? 'border-[#008080] bg-gradient-to-br from-[#008080] to-[#708090] text-[#FFFFFF]' : 'hover:border-[#4FC3F7]'
+                    activeCategory === key ? 'border-black bg-gradient-to-br from-[#4595f0] to-[#708090] text-[#FFFFFF]' : 'hover:border-[#4FC3F7]'
                   } ${isVisible['services-nav'] ? `opacity-100 translate-y-0 delay-${index * 100}` : 'opacity-0 translate-y-5'}`}
                 >
                   <div className="space-y-4">
                     <div className={`w-16 h-16 rounded-full flex items-center justify-center transition-all ${
-                      activeCategory === key ? 'bg-[#FFFFFF]' : 'bg-[#008080]'
+                      activeCategory === key ? 'bg-[#FFFFFF]' : 'bg-[#042b63]'
                     }`}>
                       <IconComponent className={`w-8 h-8 transition-all ${
-                        activeCategory === key ? 'text-[#2b6777]' : 'text-[#FFFFFF]'
+                        activeCategory === key ? 'text-black' : 'text-[#FFFFFF]'
                       }`} />
                     </div>
                     <h3 className={`text-lg font-black transition-all ${
-                      activeCategory === key ? 'text-[#FFFFFF]' : 'text-[#2b6777]'
+                      activeCategory === key ? 'text-[#FFFFFF]' : 'text-black'
                     }`}>
                       {service.title}
                     </h3>
@@ -1135,10 +1135,10 @@ const ServicesPage = () => {
                   }`}
                 >
                   <div className="text-center space-y-6 mb-12">
-                    <div className="w-20 h-20 bg-gradient-to-br from-[#008080] to-[#708090] mx-auto rounded-full flex items-center justify-center animate-pulse">
+                    <div className="w-20 h-20 bg-gradient-to-br from-[#003c80] to-[#708090] mx-auto rounded-full flex items-center justify-center animate-pulse">
                       <IconComponent className="w-10 h-10 text-[#FFFFFF]" />
                     </div>
-                    <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-[#2b6777]">
+                    <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-black">
                       {service.title.toUpperCase()}
                     </h2>
                     <p className="text-xl text-neutral-700 max-w-3xl mx-auto">
@@ -1152,7 +1152,7 @@ const ServicesPage = () => {
                         ([subcat, subServices], subcatIndex) => (
                           <div
                             key={subcat}
-                            className="bg-[#2b6777]  rounded-3xl p-6 sm:p-8 overflow-hidden"
+                            className="bg-[#2b4d77]  rounded-3xl p-6 sm:p-8 overflow-hidden"
                           >
                             <div
                               className="flex items-center justify-between cursor-pointer mb-6"
@@ -1183,8 +1183,8 @@ const ServicesPage = () => {
                                   key={serviceIndex}
                                   className="bg-[#FFFFFF] p-4 rounded-xl border-2 border-[#87CEEB] hover:border-[#4FC3F7] transition-all duration-300 transform hover:scale-102 flex items-center space-x-3"
                                 >
-                                  <CheckCircle className="w-5 h-5 text-[#2b6777] flex-shrink-0" />
-                                  <span className="font-medium text-[#2b6777]">
+                                  <CheckCircle className="w-5 h-5 text-black flex-shrink-0" />
+                                  <span className="font-medium text-black">
                                     {subService}
                                   </span>
                                 </div>
@@ -1198,14 +1198,14 @@ const ServicesPage = () => {
                         {service.services.map((serviceName, serviceIndex) => (
                           <div
                             key={serviceIndex}
-                            className="bg-[#B0E0E6] p-6 rounded-2xl border-2 border-[#87CEEB] hover:border-[#4FC3F7] transition-all duration-300 transform hover:scale-105 hover:shadow-lg w-full"
+                            className="bg-[#4896e0] p-6 rounded-2xl border-2 border-[#87CEEB] hover:border-[#4FC3F7] transition-all duration-300 transform hover:scale-105 hover:shadow-lg w-full"
                           >
                             <div className="flex items-start space-x-4">
-                              <div className="w-10 h-10 bg-[#008080] rounded-full flex items-center justify-center flex-shrink-0">
+                              <div className="w-10 h-10 bg-[#004680] rounded-full flex items-center justify-center flex-shrink-0">
                                 <CheckCircle className="w-5 h-5 text-[#FFFFFF]" />
                               </div>
                               <div className="space-y-2">
-                                <h4 className="font-black text-[#2b6777] text-lg">
+                                <h4 className="font-black text-black text-lg">
                                   {serviceName}
                                 </h4>
                                 <p className="text-neutral-700 text-sm">
@@ -1227,7 +1227,7 @@ const ServicesPage = () => {
       </section>
 
       {/* Why Choose Our Services */}
-      <section className="py-20 bg-[#2b6777] text-[#ffffff]" id="why-choose">
+      <section className="py-20 bg-[#2b4c77] text-[#ffffff]" id="why-choose">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center space-y-6 mb-16">
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-black">
@@ -1271,7 +1271,7 @@ const ServicesPage = () => {
                 description: "500+ satisfied clients with 98% retention rate speak to our service excellence."
               }
             ].map((item, index) => (
-              <div key={index} className={`bg-gradient-to-br from-[#52ab98] bg-opacity-20 backdrop-blur-lg p-8 rounded-3xl hover:bg-gray-800 transition-all duration-300 transform hover:scale-105 group ${isVisible['why-choose'] ? `opacity-100 translate-y-0 delay-${index * 100}` : 'opacity-0 translate-y-5'}`}>
+              <div key={index} className={`bg-gradient-to-br from-[#7ba3d2] bg-opacity-20 backdrop-blur-lg p-8 rounded-3xl hover:bg-gray-800 transition-all duration-300 transform hover:scale-105 group ${isVisible['why-choose'] ? `opacity-100 translate-y-0 delay-${index * 100}` : 'opacity-0 translate-y-5'}`}>
                 <div className="space-y-6">
                   <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center group-hover:rotate-12 transition-transform">
                     <item.icon className="w-8 h-8 text-black" />
@@ -1289,7 +1289,7 @@ const ServicesPage = () => {
       <section className="py-20 bg-[#FFFFFF]" id="service-process">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center space-y-6 mb-16">
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-[#2b6777]">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-black">
               OUR SERVICE PROCESS
             </h2>
             <p className="text-xl text-neutral-700 max-w-3xl mx-auto">
@@ -1326,14 +1326,14 @@ const ServicesPage = () => {
             ].map((item, index) => (
               <div key={index} className={`text-center group transition-all duration-500 ${isVisible['service-process'] ? `opacity-100 translate-y-0 delay-${index * 150}` : 'opacity-0 translate-y-5'}`}>
                 <div className="relative mb-8">
-                  <div className="w-20 h-20 bg-[#008080] mx-auto rounded-full flex items-center justify-center group-hover:scale-110 transition-transform">
+                  <div className="w-20 h-20 bg-[#004280] mx-auto rounded-full flex items-center justify-center group-hover:scale-110 transition-transform">
                     <item.icon className="w-10 h-10 text-[#FFFFFF]" />
                   </div>
-                  <div className="absolute -top-2 -right-2 w-8 h-8 bg-[#FFFFFF] border-4 border-[#008080] rounded-full flex items-center justify-center">
-                    <span className="text-xs font-black text-[#2b6777]">{item.step}</span>
+                  <div className="absolute -top-2 -right-2 w-8 h-8 bg-[#FFFFFF] border-4 border-black rounded-full flex items-center justify-center">
+                    <span className="text-xs font-black text-black">{item.step}</span>
                   </div>
                 </div>
-                <h3 className="text-xl font-black text-[#2b6777] mb-4">{item.title}</h3>
+                <h3 className="text-xl font-black text-black mb-4">{item.title}</h3>
                 <p className="text-neutral-700 leading-relaxed">{item.description}</p>
               </div>
             ))}
@@ -1345,7 +1345,7 @@ const ServicesPage = () => {
       <section className="py-20 bg-[#FFFFFF]" id="cta">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className={`space-y-8 transition-all duration-1000 ${isVisible.cta ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-[#2b6777] leading-tight">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-black leading-tight">
               READY TO GET STARTED WITH
               <span className="block">PROFESSIONAL CA SERVICES?</span>
             </h2>
@@ -1356,24 +1356,24 @@ const ServicesPage = () => {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center pt-8">
-              <button className="bg-[#008080] text-[#FFFFFF] px-10 py-5 font-black text-lg hover:bg-[#4FC3F7] transition-all duration-300 transform hover:scale-105 flex items-center justify-center space-x-2">
+              <button className="bg-[#003a80] text-[#FFFFFF] px-10 py-5 font-black text-lg hover:bg-[#3e6dbe] transition-all duration-300 transform hover:scale-105 flex items-center justify-center space-x-2">
                 <span>GET FREE CONSULTATION</span>
                 <ArrowRight className="w-6 h-6" />
               </button>
-              <button className="border-2 border-[#008080] text-[#2b6777] px-10 py-5 font-black text-lg hover:bg-[#008080] hover:text-[#FFFFFF] transition-all duration-300 flex items-center justify-center space-x-2">
+              <button className="border-2 border-black text-black px-10 py-5 font-black text-lg hover:bg-[#003a80] hover:text-[#FFFFFF] transition-all duration-300 flex items-center justify-center space-x-2">
                 <Phone className="w-5 h-5" />
                 <span>CALL +91 9623365775</span>
               </button>
             </div>
 
-            <div className="grid grid-cols-3 gap-8 pt-12 border-t-2 border-[#4FC3F7]">
+            <div className="grid grid-cols-3 gap-8 pt-12 border-t-2 border-[#052f83]">
               {[
                 { value: "FREE", label: "Initial Consultation" },
                 { value: "24HR", label: "Response Time" },
                 { value: "100%", label: "Satisfaction Guarantee" }
               ].map((item, index) => (
                 <div key={index} className="text-center">
-                  <div className="text-3xl font-black text-[#2b6777] mb-2">{item.value}</div>
+                  <div className="text-3xl font-black text-black mb-2">{item.value}</div>
                   <div className="text-sm text-neutral-700 font-bold uppercase">{item.label}</div>
                 </div>
               ))}

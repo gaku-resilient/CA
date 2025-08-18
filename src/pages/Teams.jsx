@@ -75,7 +75,7 @@ const TeamPage = () => {
       previousCompanies: ['Hewlett Packard Enterprise', 'AP Moller Maersk', 'Ernst & Young', 'Cargill Business Services'],
       description: 'Shraddha Kamath is a qualified Chartered Accountant and Cost Accountant with over 15 years of experience in financial management, compliance, taxation, and business advisory services.',
       keyStrengths: ['Go-getter attitude', 'Strong teamwork', 'Creative problem-solving', 'Technical expertise', 'Solutions-driven approach'],
-      color: 'from-[#2b6777] to-[#52ab98]'
+      color: 'from-[#173e66] to-[#173b5d]'
     },
     {
       id: 'sunita',
@@ -106,7 +106,7 @@ const TeamPage = () => {
       previousCompanies: ['Kulthe & Associates (Founder)', 'Various MNC Clients', 'International Tax Advisory'],
       description: 'CA Sunita Kulthe is a highly respected Chartered Accountant and the Founder of both Kulthe & Associates and Vittam Integrity Services.',
       keyStrengths: ['Integrity', 'Foresight', 'Client-focused approach', 'Technical excellence', 'Analytical mindset'],
-      color: 'from-[#52ab98] to-[#2b6777]'
+      color: 'from-[#173b5d] to-[#173e66]'
     }
   ];
 
@@ -126,7 +126,7 @@ const TeamPage = () => {
       {/* Animated Background Elements */}
       <div className="fixed inset-0 pointer-events-none overflow-hidden opacity-5 z-0">
         <div 
-          className="absolute top-20 left-10 w-24 h-24 rounded-full border-4 border-[#2b6777]"
+          className="absolute top-20 left-10 w-24 h-24 rounded-full border-4 border-[#173e66]"
           style={{
             animation: 'spin 25s linear infinite',
             transform: `translateY(${isScrolled ? -20 : 0}px)`,
@@ -134,7 +134,7 @@ const TeamPage = () => {
           }}
         ></div>
         <div 
-          className="absolute top-1/3 right-16 w-20 h-20 rounded-full border-3 border-[#52ab98]"
+          className="absolute top-1/3 right-16 w-20 h-20 rounded-full border-3 border-[#173b5d]"
           style={{
             animation: 'pulse 3s ease-in-out infinite',
             transform: `translateX(${isScrolled ? 15 : 0}px)`,
@@ -157,17 +157,17 @@ const TeamPage = () => {
           <div className="text-center space-y-6 sm:space-y-8">
             <nav className="text-sm font-medium" aria-label="Breadcrumb">
               <ol className="flex justify-center space-x-2 text-neutral-700">
-                <li><a href="/" className="hover:text-[#2b6777] transition-colors duration-300">Home</a></li>
+                <li><a href="/" className="hover:text-black transition-colors duration-300">Home</a></li>
                 <li className="before:content-['/'] before:mx-2 text-neutral-700">Our Team</li>
               </ol>
             </nav>
 
             <div className="space-y-4 sm:space-y-6">
-              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-[#2b6777] leading-tight">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-black leading-tight">
                 MEET OUR
-                <span className="block relative text-[#2b6777]">
+                <span className="block relative text-black">
                   FOUNDING PARTNERS
-                  <div className="absolute -bottom-1 sm:-bottom-2 left-1/2 transform -translate-x-1/2 w-20 sm:w-28 md:w-36 h-1 bg-[#52ab98] animate-pulse rounded-full"></div>
+                  <div className="absolute -bottom-1 sm:-bottom-2 left-1/2 transform -translate-x-1/2 w-20 sm:w-28 md:w-36 h-1 bg-[#61a1e0] animate-pulse rounded-full"></div>
                 </span>
               </h1>
               <p className="text-base sm:text-lg md:text-xl text-neutral-700 max-w-3xl mx-auto leading-relaxed font-medium">
@@ -183,7 +183,7 @@ const TeamPage = () => {
                 { value: "2", label: "Expert Partners" }
               ].map((stat, index) => (
                 <div key={index} className="text-center group cursor-pointer p-3 rounded-xl hover:bg-[#ffffff] hover:shadow-lg transition-all duration-300">
-                  <div className="text-2xl sm:text-3xl md:text-4xl font-black text-[#2b6777] mb-2 group-hover:scale-110 transition-transform">{stat.value}</div>
+                  <div className="text-2xl sm:text-3xl md:text-4xl font-black text-black mb-2 group-hover:scale-110 transition-transform">{stat.value}</div>
                   <div className="text-xs sm:text-sm text-neutral-700 font-bold uppercase tracking-wide">{stat.label}</div>
                 </div>
               ))}
@@ -196,7 +196,7 @@ const TeamPage = () => {
       <section className="py-12 sm:py-16 md:py-20 bg-[#f2f2f2]" id="partners">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center space-y-4 sm:space-y-6 mb-8 sm:mb-12 md:mb-16">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black text-[#2b6777]">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black text-black">
               OUR FOUNDING PARTNERS
             </h2>
             <p className="text-base sm:text-lg md:text-xl text-neutral-700 max-w-3xl mx-auto font-medium">
@@ -233,11 +233,11 @@ const TeamPage = () => {
 
                         {/* Basic Info */}
                         <div className={`space-y-3 ${activePartner === partner.id ? 'lg:flex-1' : ''}`}>
-                          <h3 className={`${activePartner === partner.id ? 'text-lg sm:text-xl md:text-2xl' : 'text-xl sm:text-2xl md:text-3xl'} font-black text-[#2b6777] transition-all duration-500`}>
+                          <h3 className={`${activePartner === partner.id ? 'text-lg sm:text-xl md:text-2xl' : 'text-xl sm:text-2xl md:text-3xl'} font-black text-black transition-all duration-500`}>
                             {partner.name}
                           </h3>
                           <div className="space-y-2">
-                            <p className={`${activePartner === partner.id ? 'text-sm sm:text-base' : 'text-base sm:text-lg'} font-bold text-[#52ab98] transition-all duration-500`}>{partner.title}</p>
+                            <p className={`${activePartner === partner.id ? 'text-sm sm:text-base' : 'text-base sm:text-lg'} font-bold text-[#173b5d] transition-all duration-500`}>{partner.title}</p>
                             <p className={`${activePartner === partner.id ? 'text-xs sm:text-sm' : 'text-sm sm:text-base'} text-neutral-700 font-medium transition-all duration-500`}>{partner.subtitle}</p>
                             <p className={`${activePartner === partner.id ? 'text-xs' : 'text-xs sm:text-sm'} text-neutral-600 font-bold transition-all duration-500`}>{partner.credentials}</p>
                           </div>
@@ -246,11 +246,11 @@ const TeamPage = () => {
                           {activePartner !== partner.id && (
                             <div className="grid grid-cols-2 gap-3 animate-fadeIn">
                               <div className="bg-[#f2f2f2] p-3 rounded-lg text-center">
-                                <div className="text-xl font-black text-[#2b6777]">{partner.experience}</div>
+                                <div className="text-xl font-black text-black">{partner.experience}</div>
                                 <div className="text-xs font-bold text-neutral-700 uppercase">Experience</div>
                               </div>
                               <div className="bg-[#f2f2f2] p-3 rounded-lg text-center">
-                                <div className="text-xl font-black text-[#2b6777]">{partner.industries.length}+</div>
+                                <div className="text-xl font-black text-black">{partner.industries.length}+</div>
                                 <div className="text-xs font-bold text-neutral-700 uppercase">Industries</div>
                               </div>
                             </div>
@@ -260,12 +260,12 @@ const TeamPage = () => {
                           {activePartner === partner.id && (
                             <div className="flex flex-wrap gap-3 text-xs sm:text-sm">
                               <div className="flex items-center space-x-2">
-                                <div className="w-2 h-2 bg-[#52ab98] rounded-full"></div>
-                                <span className="font-bold text-[#2b6777]">{partner.experience} Experience</span>
+                                <div className="w-2 h-2 bg-[#61a1e0] rounded-full"></div>
+                                <span className="font-bold text-black">{partner.experience} Experience</span>
                               </div>
                               <div className="flex items-center space-x-2">
-                                <div className="w-2 h-2 bg-[#52ab98] rounded-full"></div>
-                                <span className="font-bold text-[#2b6777]">{partner.industries.length}+ Industries</span>
+                                <div className="w-2 h-2 bg-[#61a1e0] rounded-full"></div>
+                                <span className="font-bold text-black">{partner.industries.length}+ Industries</span>
                               </div>
                             </div>
                           )}
@@ -278,7 +278,7 @@ const TeamPage = () => {
                   {activePartner !== partner.id && (
                     <div className="p-6 sm:p-8 md:p-10 space-y-6">
                       <div className="space-y-4">
-                        <h4 className="text-lg sm:text-xl font-black text-[#2b6777]">Professional Overview</h4>
+                        <h4 className="text-lg sm:text-xl font-black text-black">Professional Overview</h4>
                         <p className="text-sm sm:text-base text-neutral-700 leading-relaxed font-medium">
                           {partner.description}
                         </p>
@@ -286,21 +286,21 @@ const TeamPage = () => {
 
                       <div className="bg-[#f2f2f2] p-4 sm:p-5 rounded-xl">
                         <div className="flex items-center space-x-2 mb-2">
-                          <Briefcase className="w-5 h-5 text-[#2b6777]" />
-                          <h5 className="text-base font-black text-[#2b6777]">Current Role</h5>
+                          <Briefcase className="w-5 h-5 text-black" />
+                          <h5 className="text-base font-black text-black">Current Role</h5>
                         </div>
                         <p className="text-sm text-neutral-700 font-medium">{partner.currentRole}</p>
                       </div>
 
                       <div className="space-y-3">
-                        <h5 className="text-base font-black text-[#2b6777] flex items-center space-x-2">
+                        <h5 className="text-base font-black text-black flex items-center space-x-2">
                           <Target className="w-4 h-4" />
                           <span>Core Specializations</span>
                         </h5>
                         <div className="grid grid-cols-1 gap-2">
                           {partner.specializations.slice(0, 3).map((spec, specIndex) => (
-                            <div key={specIndex} className="flex items-start space-x-2 p-2 bg-[#ffffff] rounded-lg border-l-4 border-[#52ab98]">
-                              <CheckCircle className="w-4 h-4 text-[#52ab98] mt-0.5 flex-shrink-0" />
+                            <div key={specIndex} className="flex items-start space-x-2 p-2 bg-[#ffffff] rounded-lg border-l-4 border-[#173b5d]">
+                              <CheckCircle className="w-4 h-4 text-[#173b5d] mt-0.5 flex-shrink-0" />
                               <span className="text-xs sm:text-sm text-neutral-700 font-medium">{spec}</span>
                             </div>
                           ))}
@@ -319,7 +319,7 @@ const TeamPage = () => {
                 {activePartner === partner.id && (
                   <div className="px-6 sm:px-8 md:px-10 py-6 space-y-6 animate-fadeIn">
                     <div className="bg-[#f2f2f2] p-4 sm:p-5 rounded-xl">
-                      <h4 className="text-lg sm:text-xl font-black text-[#2b6777] mb-3">Professional Overview</h4>
+                      <h4 className="text-lg sm:text-xl font-black text-black mb-3">Professional Overview</h4>
                       <p className="text-sm sm:text-base text-neutral-700 leading-relaxed font-medium">
                         {partner.description}
                       </p>
@@ -327,22 +327,22 @@ const TeamPage = () => {
 
                     <div className="bg-[#ffffff] p-4 sm:p-5 rounded-xl border-2 border-[#c8d8e4]">
                       <div className="flex items-center space-x-2 mb-2">
-                        <Briefcase className="w-5 h-5 text-[#2b6777]" />
-                        <h5 className="text-base font-black text-[#2b6777]">Current Role</h5>
+                        <Briefcase className="w-5 h-5 text-black" />
+                        <h5 className="text-base font-black text-black">Current Role</h5>
                       </div>
                       <p className="text-sm text-neutral-700 font-medium">{partner.currentRole}</p>
                     </div>
 
                     <div className="grid lg:grid-cols-2 gap-6">
                       <div className="space-y-3">
-                        <h5 className="text-base font-black text-[#2b6777] flex items-center space-x-2">
+                        <h5 className="text-base font-black text-black flex items-center space-x-2">
                           <Target className="w-4 h-4" />
                           <span>Core Specializations</span>
                         </h5>
                         <div className="grid grid-cols-1 gap-2">
                           {partner.specializations.map((spec, specIndex) => (
-                            <div key={specIndex} className="flex items-start space-x-2 p-2 bg-[#ffffff] rounded-lg border-l-4 border-[#52ab98]">
-                              <CheckCircle className="w-4 h-4 text-[#52ab98] mt-0.5 flex-shrink-0" />
+                            <div key={specIndex} className="flex items-start space-x-2 p-2 bg-[#ffffff] rounded-lg border-l-4 border-[#173b5d]">
+                              <CheckCircle className="w-4 h-4 text-[#173b5d] mt-0.5 flex-shrink-0" />
                               <span className="text-xs sm:text-sm text-neutral-700 font-medium">{spec}</span>
                             </div>
                           ))}
@@ -350,13 +350,13 @@ const TeamPage = () => {
                       </div>
 
                       <div className="space-y-3">
-                        <h5 className="text-base font-black text-[#2b6777] flex items-center space-x-2">
+                        <h5 className="text-base font-black text-black flex items-center space-x-2">
                           <Award className="w-4 h-4" />
                           <span>Technical Expertise</span>
                         </h5>
                         <div className="flex flex-wrap gap-2">
                           {partner.expertise.map((skill, skillIndex) => (
-                            <span key={skillIndex} className="bg-[#52ab98] text-[#ffffff] px-3 py-1 rounded-full text-xs font-bold">
+                            <span key={skillIndex} className="bg-[#61a1e0] text-[#ffffff] px-3 py-1 rounded-full text-xs font-bold">
                               {skill}
                             </span>
                           ))}
@@ -366,13 +366,13 @@ const TeamPage = () => {
 
                     <div className="grid lg:grid-cols-2 gap-6">
                       <div className="space-y-3">
-                        <h5 className="text-base font-black text-[#2b6777] flex items-center space-x-2">
+                        <h5 className="text-base font-black text-black flex items-center space-x-2">
                           <BookOpen className="w-4 h-4" />
                           <span>Accounting Frameworks</span>
                         </h5>
                         <div className="flex flex-wrap gap-2">
                           {partner.frameworks.map((framework, frameworkIndex) => (
-                            <span key={frameworkIndex} className="bg-[#2b6777] text-[#ffffff] px-3 py-1 rounded-full text-xs font-bold">
+                            <span key={frameworkIndex} className="bg-[#173e66] text-[#ffffff] px-3 py-1 rounded-full text-xs font-bold">
                               {framework}
                             </span>
                           ))}
@@ -380,14 +380,14 @@ const TeamPage = () => {
                       </div>
 
                       <div className="space-y-3">
-                        <h5 className="text-base font-black text-[#2b6777] flex items-center space-x-2">
+                        <h5 className="text-base font-black text-black flex items-center space-x-2">
                           <Star className="w-4 h-4" />
                           <span>Key Strengths</span>
                         </h5>
                         <div className="grid grid-cols-1 gap-2">
                           {partner.keyStrengths.map((strength, strengthIndex) => (
-                            <div key={strengthIndex} className="flex items-center space-x-2 p-2 bg-[#ffffff] rounded-lg border-l-4 border-[#2b6777]">
-                              <Heart className="w-3 h-3 text-[#2b6777]" />
+                            <div key={strengthIndex} className="flex items-center space-x-2 p-2 bg-[#ffffff] rounded-lg border-l-4 border-[#173e66]">
+                              <Heart className="w-3 h-3 text-black" />
                               <span className="text-xs text-neutral-700 font-medium">{strength}</span>
                             </div>
                           ))}
@@ -396,14 +396,14 @@ const TeamPage = () => {
                     </div>
 
                     <div className="space-y-3">
-                      <h5 className="text-base font-black text-[#2b6777] flex items-center space-x-2">
+                      <h5 className="text-base font-black text-black flex items-center space-x-2">
                         <Building className="w-4 h-4" />
                         <span>Industries Served</span>
                       </h5>
                       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2">
                         {partner.industries.map((industry, industryIndex) => (
                           <div key={industryIndex} className="flex items-center space-x-2 p-2 bg-[#ffffff] rounded-lg border border-[#c8d8e4]">
-                            <TrendingUp className="w-3 h-3 text-[#52ab98]" />
+                            <TrendingUp className="w-3 h-3 text-[#113f5b]" />
                             <span className="text-xs text-neutral-700 font-medium">{industry}</span>
                           </div>
                         ))}
@@ -411,14 +411,14 @@ const TeamPage = () => {
                     </div>
 
                     <div className="space-y-3">
-                      <h5 className="text-base font-black text-[#2b6777] flex items-center space-x-2">
+                      <h5 className="text-base font-black text-black flex items-center space-x-2">
                         <Globe className="w-4 h-4" />
                         <span>Professional Journey</span>
                       </h5>
                       <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
                         {partner.previousCompanies.map((company, companyIndex) => (
                           <div key={companyIndex} className="flex items-center space-x-2 p-3 bg-gradient-to-r from-[#f2f2f2] to-[#ffffff] rounded-lg">
-                            <div className="w-2 h-2 bg-[#52ab98] rounded-full"></div>
+                            <div className="w-2 h-2 bg-[#61a1e0] rounded-full"></div>
                             <span className="text-xs text-neutral-700 font-medium">{company}</span>
                           </div>
                         ))}
@@ -431,7 +431,7 @@ const TeamPage = () => {
                 <div className="px-6 sm:px-8 md:px-10 py-4">
                   <button
                     onClick={() => togglePartnerDetails(partner.id)}
-                    className="w-full sm:w-auto min-w-[180px] bg-[#2b6777] text-[#ffffff] px-5 py-3 font-bold text-sm rounded-lg hover:bg-[#52ab98] transition-all duration-300 flex items-center justify-center space-x-2 mx-auto"
+                    className="w-full sm:w-auto min-w-[180px] bg-[#124069] text-[#ffffff] px-5 py-3 font-bold text-sm rounded-lg hover:bg-[#61a1e0] transition-all duration-300 flex items-center justify-center space-x-2 mx-auto"
                   >
                     <span>{activePartner === partner.id ? 'SHOW LESS' : 'VIEW DETAILED PROFILE'}</span>
                     {activePartner === partner.id ? 
@@ -447,7 +447,7 @@ const TeamPage = () => {
       </section>
 
       {/* Why Our Leadership Matters */}
-      <section className="py-12 sm:py-16 md:py-20 bg-[#2b6777] text-[#ffffff]" id="leadership-value">
+      <section className="py-12 sm:py-16 md:py-20 bg-[#213b60] text-[#ffffff]" id="leadership-value">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center space-y-4 sm:space-y-6 mb-8 sm:mb-12 md:mb-16">
             <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black">
@@ -493,11 +493,11 @@ const TeamPage = () => {
             ].map((item, index) => (
               <div 
                 key={index} 
-                className="bg-gradient-to-br from-[#52ab98] bg-opacity-20 backdrop-blur-lg p-6 rounded-2xl hover:bg-opacity-30 transition-all duration-300 transform hover:scale-105 group border border-[#ffffff] border-opacity-20 shadow-md hover:shadow-lg"
+                className="bg-gradient-to-br from-[#5288ab] bg-opacity-20 backdrop-blur-lg p-6 rounded-2xl hover:bg-opacity-30 transition-all duration-300 transform hover:scale-105 group border border-[#ffffff] border-opacity-20 shadow-md hover:shadow-lg"
               >
                 <div className="space-y-4">
                   <div className="w-12 h-12 bg-[#ffffff] bg-opacity-20 rounded-full flex items-center justify-center group-hover:rotate-12 transition-transform shadow-md">
-                    <item.icon className="w-6 h-6 text-[#ffffff]" />
+                    <item.icon className="w-6 h-6 text-[#0e2b3e]" />
                   </div>
                   <h3 className="text-lg font-black">{item.title}</h3>
                   <p className="text-sm leading-relaxed font-medium opacity-90">{item.description}</p>
@@ -512,7 +512,7 @@ const TeamPage = () => {
       <section className="py-12 sm:py-16 md:py-20 bg-[#ffffff]" id="partnership-approach">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center space-y-4 sm:space-y-6 mb-8 sm:mb-12">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-black text-[#2b6777]">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-black text-black">
               OUR PARTNERSHIP APPROACH
             </h2>
             <p className="text-base sm:text-lg text-neutral-700 font-medium">
@@ -523,10 +523,10 @@ const TeamPage = () => {
           <div className="grid md:grid-cols-2 gap-6 sm:gap-8">
             <div className="bg-gradient-to-br from-[#f2f2f2] to-[#ffffff] p-6 rounded-2xl shadow-md">
               <div className="space-y-4">
-                <div className="w-12 h-12 bg-gradient-to-br from-[#2b6777] to-[#52ab98] rounded-full flex items-center justify-center">
+                <div className="w-12 h-12 bg-gradient-to-br from-[#247fb8] to-[#0a2a52] rounded-full flex items-center justify-center">
                   <Users className="w-6 h-6 text-[#ffffff]" />
                 </div>
-                <h3 className="text-lg sm:text-xl font-black text-[#2b6777]">Complementary Expertise</h3>
+                <h3 className="text-lg sm:text-xl font-black text-black">Complementary Expertise</h3>
                 <p className="text-sm text-neutral-700 leading-relaxed font-medium">
                   Shraddha's corporate finance and compliance expertise perfectly complements Sunita's taxation and litigation specialization.
                 </p>
@@ -535,10 +535,10 @@ const TeamPage = () => {
 
             <div className="bg-gradient-to-br from-[#f2f2f2] to-[#ffffff] p-6 rounded-2xl shadow-md">
               <div className="space-y-4">
-                <div className="w-12 h-12 bg-gradient-to-br from-[#52ab98] to-[#2b6777] rounded-full flex items-center justify-center">
+                <div className="w-12 h-12 bg-gradient-to-br from-[#247fb8] to-[#0a2a52] rounded-full flex items-center justify-center">
                   <Heart className="w-6 h-6 text-[#ffffff]" />
                 </div>
-                <h3 className="text-lg sm:text-xl font-black text-[#2b6777]">Shared Values</h3>
+                <h3 className="text-lg sm:text-xl font-black text-black">Shared Values</h3>
                 <p className="text-sm text-neutral-700 leading-relaxed font-medium">
                   Both partners share a commitment to integrity, excellence, and client success, ensuring consistent quality and ethical standards.
                 </p>
@@ -552,32 +552,32 @@ const TeamPage = () => {
       <section className="py-12 sm:py-16 md:py-20 bg-[#f2f2f2]">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="space-y-6 sm:space-y-8">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black text-[#2b6777] leading-tight">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black text-black leading-tight">
               READY TO WORK WITH
-              <span className="block text-[#2b6777]">MUMBAI'S BEST?</span>
+              <span className="block text-black">MUMBAI'S BEST?</span>
             </h2>
             <p className="text-base sm:text-lg md:text-xl text-neutral-700 leading-relaxed font-medium max-w-3xl mx-auto">
               Get direct access to our founding partners for expert financial guidance, comprehensive compliance solutions, and strategic business advisory.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center pt-6">
-              <button className="bg-[#2b6777] text-[#ffffff] px-8 sm:px-10 py-4 font-black text-base sm:text-lg rounded-lg hover:bg-[#52ab98] transition-all duration-300 transform hover:scale-105 flex items-center justify-center space-x-2 shadow-lg hover:shadow-xl">
+              <button className="bg-[#173e66] text-[#ffffff] px-8 sm:px-10 py-4 font-black text-base sm:text-lg rounded-lg hover:bg-[#61a1e0] transition-all duration-300 transform hover:scale-105 flex items-center justify-center space-x-2 shadow-lg hover:shadow-xl">
                 <span>SCHEDULE CONSULTATION</span>
                 <ArrowRight className="w-5 h-5" />
               </button>
-              <button className="border-2 border-[#2b6777] text-[#2b6777] px-8 sm:px-10 py-4 font-black text-base sm:text-lg rounded-lg hover:bg-[#2b6777] hover:text-[#ffffff] transition-all duration-300 shadow-lg">
+              <button className="border-2 border-[#173e66] text-black px-8 sm:px-10 py-4 font-black text-base sm:text-lg rounded-lg hover:bg-[#173e66] hover:text-[#ffffff] transition-all duration-300 shadow-lg">
                 CALL +91 98765 43210
               </button>
             </div>
 
-            <div className="grid grid-cols-3 gap-4 sm:gap-6 pt-8 border-t-4 border-[#52ab98] rounded-full">
+            <div className="grid grid-cols-3 gap-4 sm:gap-6 pt-8 border-t-4 border-[#527cab] rounded-full">
               {[
                 { value: "DIRECT", label: "Partner Access" },
                 { value: "FREE", label: "Initial Consultation" },
                 { value: "24HR", label: "Response Time" }
               ].map((item, index) => (
                 <div key={index} className="text-center p-3 rounded-lg hover:bg-[#ffffff] transition-all duration-300">
-                  <div className="text-xl sm:text-2xl md:text-3xl font-black text-[#2b6777] mb-2">{item.value}</div>
+                  <div className="text-xl sm:text-2xl md:text-3xl font-black text-black mb-2">{item.value}</div>
                   <div className="text-xs sm:text-sm text-neutral-700 font-bold uppercase tracking-wide">{item.label}</div>
                 </div>
               ))}
@@ -629,12 +629,12 @@ const TeamPage = () => {
         
         ::selection {
           background: rgba(43, 103, 119, 0.2);
-          color: #2b6777;
+          color: #173e66;
         }
         
         ::-moz-selection {
           background: rgba(43, 103, 119, 0.2);
-          color: #2b6777;
+          color: #173e66;
         }
 
         @media (max-width: 640px) {
