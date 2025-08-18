@@ -1,7 +1,7 @@
 import React from 'react';
 // import Navbar from '../components/Layout/Header';
 import HeroSlider from '../components/Herosection/HeroSlider';
-// import Homecheck  from '../components/Herosection/Homepage';
+import Homecheck  from '../components/Herosection/Homepage';
 
 
 const Home = () => {
@@ -12,7 +12,7 @@ const Home = () => {
       
      
       <HeroSlider />
-      {/* <Homecheck/> */}
+      <Homecheck/>
 
       
       {/* About Section */}

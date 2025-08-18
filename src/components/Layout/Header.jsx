@@ -491,21 +491,21 @@ const Header = () => {
       {/* Top Contact Bar */}
       <div className={`${
         isScrolled ? 'h-0 overflow-hidden' : 'h-auto'
-      } bg-[#2b6777] text-[#ffffff] transition-all duration-300`}>
+      } bg-[#0A2342] text-[#ffffff] transition-all duration-300`}>
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-2 sm:py-3">
           <div className="flex flex-col sm:flex-row justify-between items-center text-xs sm:text-sm">
             <div className="flex flex-col sm:flex-row items-center space-y-2 sm:space-y-0 sm:space-x-4 md:space-x-6">
               <div className="flex items-center space-x-2 group cursor-pointer">
                 <Phone className="w-3 sm:w-4 h-3 sm:h-4 group-hover:rotate-12 transition-transform" />
-                <span className="font-medium">+91 xxxxx 43210</span>
+                <span className="font-medium">+919975835302 </span>
               </div>
               <div className="flex items-center space-x-2 group cursor-pointer">
                 <Mail className="w-3 sm:w-4 h-3 sm:h-4 group-hover:scale-110 transition-transform" />
-                <span className="font-medium">info@VittamIntegrityServices.com</span>
+                <span className="font-medium">vittamintegrityservices@gmail.com</span>
               </div>
               <div className="flex items-center space-x-2 group cursor-pointer">
                 <MapPin className="w-3 sm:w-4 h-3 sm:h-4 group-hover:scale-110 transition-transform" />
-                <span className="font-medium">Paryagraj</span>
+                <span className="font-medium">Bangalore -560068, Karnataka, India </span>
               </div>
             </div>
             <div className="flex items-center space-x-3 sm:space-x-4 mt-2 sm:mt-0">
@@ -521,7 +521,7 @@ const Header = () => {
                   </a>
                 ))}
                 <a 
-                  href="https://wa.me/919354502422" 
+                  href="https://wa.me/919975835302" 
                   target="_blank" 
                   rel="noopener noreferrer" 
                   className="w-6 sm:w-7 h-6 sm:h-7 border border-[#ffffff] hover:bg-[#ffffff] hover:text-[#2b6777] transition-all duration-300 flex items-center justify-center text-xs font-bold rounded-full"
@@ -541,7 +541,7 @@ const Header = () => {
         } transition-all duration-300`}>
           
           {/* Curved Navbar Container */}
-          <div className="bg-[#2b6777] rounded-full px-4 sm:px-6 lg:px-8 py-3 sm:py-4 flex justify-between items-center text-[#ffffff] shadow-lg transform hover:scale-[1.01] transition-all duration-300">
+          <div className="bg-[#123458] rounded-full px-4 sm:px-6 lg:px-8 py-3 sm:py-4 flex justify-between items-center text-[#ffffff] shadow-lg transform hover:scale-[1.01] transition-all duration-300">
             
             {/* Logo */}
             <div className="flex items-center space-x-2 sm:space-x-3 group">
@@ -550,7 +550,7 @@ const Header = () => {
               </div>
               <div>
                 <h1 className="text-lg sm:text-xl md:text-2xl font-black text-[#ffffff] group-hover:scale-105 transition-transform">
-                 वित्तम्
+                 Vittam (वित्तम्)
                 </h1>
                 <p className="text-xs sm:text-sm text-[#c8d8e4] font-medium uppercase tracking-wider">
                   Vittam Integrity Services
@@ -560,12 +560,15 @@ const Header = () => {
 
             {/* Desktop Navigation */}
             <div className="hidden lg:flex items-center space-x-4 xl:space-x-8">
-              {['HOME', 'ABOUT', 'SERVICES', 'TEAM', 'CONTACT'].map((item, index) => (
+              {['HOME', 'ABOUT', 'SERVICES', 'TEAM', 'CONTACT', 'BLOGS'].map((item, index) => (
                 <a 
                   key={index}
                   href={item === 'HOME' ? '/' :
                      item === 'ABOUT' ? '/about' :
                       item === 'SERVICES' ? '/services':
+                      item === 'CONTACT' ? '/contact':
+                         item === 'TEAM' ? '/team':
+                         item === 'BLOGS' ? '/blogs':
                       `#${item.toLowerCase()}`}
                   className="relative group font-bold text-sm xl:text-base text-[#ffffff] hover:text-[#c8d8e4] transition-colors"
                 >
@@ -612,6 +615,8 @@ const Header = () => {
                   href={item === 'HOME' ? '/' :
                      item === 'ABOUT' ? '/about' :
                       item === 'SERVICES' ? '/services':
+                        item === 'CONTACT' ? '/contact':
+                        item === 'TEAM' ? '/team':
                       `#${item.toLowerCase()}`}
                   className="block text-[#ffffff] hover:text-[#c8d8e4] py-2 sm:py-3 font-bold text-base sm:text-lg border-b border-[#c8d8e4] hover:border-[#ffffff] transition-all transform hover:translate-x-2"
                   onClick={toggleMobileMenu}
