@@ -5144,7 +5144,7 @@ const ServicesPage = () => {
   };
 
   return (
-    <div className="bg-[#FFFFFF] font-sans min-h-screen mt-25">
+    <div className="bg-[#FFFFFF] font-sans min-h-screen pt-45">
       {/* SEO Meta Information */}
       <div className="hidden">
         <h1>Professional CA Services Bangalore - Vittam Integrity Services</h1>

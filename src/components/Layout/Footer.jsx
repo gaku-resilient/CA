@@ -181,7 +181,7 @@
 //                 </div>
 //                 <div>
 //                   <h5 className="font-bold text-white mb-1 text-sm sm:text-base">EMAIL</h5>
-//                   <p className="text-gray-300 text-xs sm:text-sm">info@VittamIntegrityServices.com</p>
+//                   <p className="text-gray-300 text-xs sm:text-sm">vittamintegrityservices@gmail.com</p>
 //                 </div>
 //               </div>
 
@@ -435,7 +435,7 @@ const Footer = () => {
                 </div>
                 <div>
                   <h5 className="font-bold text-white mb-1 text-xs sm:text-sm md:text-base">EMAIL</h5>
-                  <a href="mailto:info@vittamintegrityservices.com" className="text-gray-300 hover:text-white text-xs sm:text-sm">info@vittamintegrityservices.com</a>
+                  <a href="mailto:vittamintegrityservices@gmail.com" className="text-gray-300 hover:text-white text-xs sm:text-sm">vittamintegrityservices@gmail.com</a>
                 </div>
               </div>
 
@@ -797,7 +797,7 @@ export default Footer;
 //                 </div>
 //                 <div>
 //                   <h5 className="font-bold text-white mb-1 text-sm sm:text-base">EMAIL</h5>
-//                   <p className="text-slate-200 text-xs sm:text-sm font-medium hover:text-emerald-300 transition-colors">info@VittamIntegrityServices.com</p>
+//                   <p className="text-slate-200 text-xs sm:text-sm font-medium hover:text-emerald-300 transition-colors">vittamintegrityservices@gmail.com</p>
 //                 </div>
 //               </div>
 
@@ -1092,7 +1092,7 @@ export default Footer;
 //                 </div>
 //                 <div>
 //                   <h5 className="font-bold text-[#ffffff] mb-1 text-sm sm:text-base">EMAIL</h5>
-//                   <p className="text-[#c8d8e4] text-xs sm:text-sm">info@VittamIntegrityServices.com</p>
+//                   <p className="text-[#c8d8e4] text-xs sm:text-sm">vittamintegrityservices@gmail.com</p>
 //                 </div>
 //               </div>
 
@@ -1396,7 +1396,7 @@ export default Footer;
 //                 </div>
 //                 <div>
 //                   <h5 className="font-bold text-white mb-1 text-xs sm:text-sm">EMAIL</h5>
-//                   <p className="text-slate-200 text-xs sm:text-sm font-medium hover:text-emerald-300 transition-colors">info@VittamIntegrityServices.com</p>
+//                   <p className="text-slate-200 text-xs sm:text-sm font-medium hover:text-emerald-300 transition-colors">vittamintegrityservices@gmail.com</p>
 //                 </div>
 //               </div>
 

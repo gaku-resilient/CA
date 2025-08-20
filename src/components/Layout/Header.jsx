@@ -37,7 +37,7 @@
 //               </div>
 //               <div className="flex items-center space-x-2 group cursor-pointer">
 //                 <Mail className="w-3 sm:w-4 h-3 sm:h-4 group-hover:scale-110 transition-transform" />
-//                 <span className="font-medium">info@VittamIntegrityServices.com</span>
+//                 <span className="font-medium">vittamintegrityservices@gmail.com</span>
 //               </div>
 //               <div className="flex items-center space-x-2 group cursor-pointer">
 //                 <MapPin className="w-3 sm:w-4 h-3 sm:h-4 group-hover:scale-110 transition-transform" />
@@ -173,7 +173,7 @@
 //               </div>
 //               <div className="flex items-center space-x-2 sm:space-x-3 text-gray-300">
 //                 <Mail className="w-3 sm:w-4 h-3 sm:h-4" />
-//                 <span className="font-medium text-sm sm:text-base">info@VittamIntegrityServices.com</span>
+//                 <span className="font-medium text-sm sm:text-base">vittamintegrityservices@gmail.com</span>
 //               </div>
 //               <div className="flex items-center space-x-2 sm:space-x-3 text-gray-300">
 //                 <MapPin className="w-3 sm:w-4 h-3 sm:h-4" />
@@ -265,7 +265,7 @@
 //               </div>
 //               <div className="flex items-center space-x-2 group cursor-pointer hover:text-emerald-300 transition-colors">
 //                 <Mail className="w-3 sm:w-4 h-3 sm:h-4 group-hover:scale-110 transition-transform" />
-//                 <span className="font-medium">info@VittamIntegrityServices.com</span>
+//                 <span className="font-medium">vittamintegrityservices@gmail.com</span>
 //               </div>
 //               <div className="flex items-center space-x-2 group cursor-pointer hover:text-emerald-300 transition-colors">
 //                 <MapPin className="w-3 sm:w-4 h-3 sm:h-4 group-hover:scale-110 transition-transform" />
@@ -401,7 +401,7 @@
 //               </div>
 //               <div className="flex items-center space-x-2 sm:space-x-3 text-slate-200 hover:text-emerald-300 transition-colors cursor-pointer">
 //                 <Mail className="w-4 sm:w-5 h-4 sm:h-5" />
-//                 <span className="font-medium text-sm sm:text-base">info@VittamIntegrityServices.com</span>
+//                 <span className="font-medium text-sm sm:text-base">vittamintegrityservices@gmail.com</span>
 //               </div>
 //               <div className="flex items-center space-x-2 sm:space-x-3 text-slate-200 hover:text-emerald-300 transition-colors cursor-pointer">
 //                 <MapPin className="w-4 sm:w-5 h-4 sm:h-5" />
@@ -642,7 +642,7 @@
 //               </div>
 //               <div className="flex items-center space-x-2 sm:space-x-3 text-[#c8d8e4]">
 //                 <Mail className="w-3 sm:w-4 h-3 sm:h-4" />
-//                 <span className="font-medium text-sm sm:text-base">info@VittamIntegrityServices.com</span>
+//                 <span className="font-medium text-sm sm:text-base">vittamintegrityservices@gmail.com</span>
 //               </div>
 //               <div className="flex items-center space-x-2 sm:space-x-3 text-[#c8d8e4]">
 //                 <MapPin className="w-3 sm:w-4 h-3 sm:h-4" />
@@ -736,7 +736,7 @@ const Header = () => {
               </div>
               <div className="flex items-center space-x-2 group cursor-pointer">
                 <Mail className="w-3 sm:w-4 h-3 sm:h-4 group-hover:scale-110 transition-transform" />
-                <a href="mailto:info@vittamintegrityservices.com" className="font-medium">info@vittamintegrityservices.com</a>
+                <a href="mailto:vittamintegrityservices@gmail.com" className="font-medium">vittamintegrityservices@gmail.com</a>
               </div>
               <div className="flex items-center space-x-2 group cursor-pointer">
                 <MapPin className="w-3 sm:w-4 h-3 sm:h-4 group-hover:scale-110 transition-transform" />
@@ -831,7 +831,7 @@ const Header = () => {
               
               {/* Mobile Menu Button */}
               <button
-                className="lg:hidden text-[#ffffff] focus:outline-none p-2 hover:bg-[#52ab98] rounded-full transition-colors"
+                className="lg:hidden text-[#ffffff] focus:outline-none p-2 hover:bg-[#082c49] rounded-full transition-colors"
                 onClick={toggleMobileMenu}
               >
                 {isMobileMenuOpen ? (
@@ -849,7 +849,7 @@ const Header = () => {
           isMobileMenuOpen 
             ? 'max-h-screen opacity-100 visible' 
             : 'max-h-0 opacity-0 invisible'
-        } lg:hidden absolute top-full left-2 right-2 sm:left-3 sm:right-3 bg-[#2b6777] rounded-2xl overflow-hidden transition-all duration-500 shadow-lg z-40`}>
+        } lg:hidden absolute top-full left-2 right-2 sm:left-3 sm:right-3 bg-[#082c49] rounded-2xl overflow-hidden transition-all duration-500 shadow-lg z-40`}>
           
           <div className="p-4 sm:p-5 md:p-6 space-y-3 sm:space-y-4">
             {/* Mobile Navigation Links */}
@@ -891,7 +891,7 @@ const Header = () => {
               </div>
               <div className="flex items-center space-x-2 sm:space-x-3 text-[#c8d8e4]">
                 <Mail className="w-3 sm:w-4 h-3 sm:h-4" />
-                <a href="mailto:info@vittamintegrityservices.com" className="font-medium text-sm sm:text-base">info@vittamintegrityservices.com</a>
+                <a href="mailto:vittamintegrityservices@gmail.com" className="font-medium text-sm sm:text-base">vittamintegrityservices@gmail.com</a>
               </div>
               <div className="flex items-center space-x-2 sm:space-x-3 text-[#c8d8e4]">
                 <MapPin className="w-3 sm:w-4 h-3 sm:h-4" />
