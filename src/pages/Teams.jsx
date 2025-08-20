@@ -1171,7 +1171,7 @@ const TeamPage = () => {
       </section>
 
       {/* Why Our Leadership Matters */}
-      <section className="py-10 sm:py-12 md:py-16 text-[#ffffff] bg-[#f4f6f8]" id="leadership-value">
+      <section className="py-10 sm:py-12 md:py-16 text-white bg-[#f4f6f8]" id="leadership-value">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center space-y-3 sm:space-y-4 md:space-y-6 mb-6 sm:mb-8 md:mb-12">
             <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-black text-black">
@@ -1217,14 +1217,14 @@ const TeamPage = () => {
             ].map((item, index) => (
               <div 
                 key={index} 
-                className="bg-gradient-to-br from-[#5288ab] bg-opacity-20 backdrop-blur-lg p-4 sm:p-6 rounded-2xl hover:bg-opacity-30 transition-all duration-300 transform hover:scale-105 group border border-[#ffffff] border-opacity-20 shadow-md hover:shadow-lg"
+                className="bg-gradient-to-br from-[#073e81] to-[#173C61] bg-opacity-20 backdrop-blur-lg p-4 sm:p-6 rounded-2xl hover:bg-opacity-30 transition-all duration-300 transform hover:scale-105 group border border-[#ffffff] border-opacity-20 shadow-md hover:shadow-lg"
               >
                 <div className="space-y-3 sm:space-y-4">
                   <div className="w-10 sm:w-12 h-10 sm:h-12 bg-[#ffffff] bg-opacity-20 rounded-full flex items-center justify-center group-hover:rotate-12 transition-transform shadow-md">
                     <item.icon className="w-5 sm:w-6 h-5 sm:h-6 text-[#0e2b3e]" />
                   </div>
-                  <h3 className="text-base sm:text-lg font-black text-black">{item.title}</h3>
-                  <p className="text-xs sm:text-sm text-neutral-700 leading-relaxed font-medium">{item.description}</p>
+                  <h3 className="text-base sm:text-lg font-black text-white">{item.title}</h3>
+                  <p className="text-xs sm:text-sm text-white leading-relaxed font-medium">{item.description}</p>
                 </div>
               </div>
             ))}
@@ -1286,7 +1286,7 @@ const TeamPage = () => {
 
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center pt-4 sm:pt-6">
               <a
-                href="https://calendly.com/vittamintegrityservices/consultation"
+                href="https://vittamintegrityservices/contact"
                 className="bg-[#173e66] text-[#ffffff] px-6 sm:px-8 py-3 sm:py-4 font-black text-sm sm:text-base rounded-lg hover:bg-[#61a1e0] transition-all duration-300 transform hover:scale-105 flex items-center justify-center space-x-2 shadow-lg hover:shadow-xl"
               >
                 <span>SCHEDULE CONSULTATION</span>

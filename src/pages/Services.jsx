@@ -5574,45 +5574,50 @@ const ServicesPage = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-[#FFFFFF]" id="cta">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <div className={`space-y-8 transition-all duration-1000 ${isVisible.cta ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-black leading-tight">
-              READY TO GET STARTED WITH
-              <span className="block">VITTAM INTEGRITY SERVICES?</span>
-            </h2>
-            
-            <p className="text-xl text-neutral-700 leading-relaxed">
-              Get expert chartered accountant services with guaranteed compliance and peace of mind. 
-              Empower your business with our value-driven solutions.
-            </p>
-
-            <div className="flex flex-col sm:flex-row gap-4 justify-center pt-8">
-              <button className="bg-[#003a80] text-[#FFFFFF] px-10 py-5 font-black text-lg hover:bg-[#3e6dbe] transition-all duration-300 transform hover:scale-105 flex items-center justify-center space-x-2">
-                <span>GET FREE CONSULTATION</span>
-                <ArrowRight className="w-6 h-6" />
-              </button>
-              <button className="border-2 border-black text-black px-10 py-5 font-black text-lg hover:bg-[#003a80] hover:text-[#FFFFFF] transition-all duration-300 flex items-center justify-center space-x-2">
-                <Phone className="w-5 h-5" />
-                <span>CALL +91 9623365775</span>
-              </button>
-            </div>
-
-            <div className="grid grid-cols-3 gap-8 pt-12 border-t-2 border-[#052f83]">
-              {[
-                { value: "FREE", label: "Initial Consultation" },
-                { value: "24HR", label: "Response Time" },
-                { value: "100%", label: "Satisfaction Guarantee" }
-              ].map((item, index) => (
-                <div key={index} className="text-center">
-                  <div className="text-3xl font-black text-black mb-2">{item.value}</div>
-                  <div className="text-sm text-neutral-700 font-bold uppercase">{item.label}</div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
+      <section className="py-5 sm:py-10 md:py-6 bg-[#ffffff]">
+             <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+               <div className="space-y-8 sm:space-y-10">
+                 <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-black leading-tight">
+                  READY TO GET STARTED WITH
+                   <span className="block text-black">VITTAM INTEGRITY SERVICES?</span>
+                 </h2>
+                 
+                 <p className="text-lg sm:text-xl md:text-2xl text-neutral-700 leading-relaxed font-medium max-w-4xl mx-auto">
+                 Get expert chartered accountant services with guaranteed compliance and peace of mind. Empower your business with our value-driven solutions.
+                 </p>
+     
+                 <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center pt-8 sm:pt-10">
+                   <a
+                     href="./contact"
+                     className="bg-[#123458] text-[#ffffff] px-10 sm:px-12 md:px-14 py-5 sm:py-6 md:py-7 font-black text-base sm:text-lg md:text-xl rounded-xl hover:bg-[#3e556d] transition-all duration-300 transform hover:scale-105 flex items-center justify-center space-x-3 shadow-xl hover:shadow-2xl"
+                   >
+                     <span>BOOK FREE CONSULTATION</span>
+                     <ArrowRight className="w-5 sm:w-6 md:w-7 h-5 sm:h-6 md:h-7" />
+                   </a>
+                   <a
+                     href="tel:+919623365775"
+                     className="border-2 border-[#2b6777] text-black px-10 sm:px-12 md:px-14 py-5 sm:py-6 md:py-7 font-black text-base sm:text-lg md:text-xl rounded-xl hover:bg-[#123458] hover:text-[#ffffff] transition-all duration-300 shadow-xl"
+                   >
+                     CALL +91-9623365775
+                   </a>
+                 </div>
+     
+                 <div className="grid grid-cols-3 gap-6 sm:gap-8 md:gap-10 pt-12 sm:pt-16 border-t-4 border-[#123458] rounded-full">
+                   {[
+                     { value: "FREE", label: "Initial Consultation" },
+                     { value: "GLOBAL", label: "Client Support" },
+                     { value: "100%", label: "Ethical Standards" }
+                   ].map((item, index) => (
+                     <div key={index} className="text-center p-4 rounded-2xl hover:bg-[#f2f2f2] transition-all duration-300">
+                       <div className="text-2xl sm:text-3xl md:text-4xl font-black text-black mb-3">{item.value}</div>
+                       <div className="text-sm sm:text-base text-neutral-700 font-bold uppercase tracking-wide">{item.label}</div>
+                     </div>
+                   ))}
+                 </div>
+               </div>
+             </div>
+           </section>
+     
 
       {/* Structured Data for SEO */}
       <script type="application/ld+json" dangerouslySetInnerHTML={{

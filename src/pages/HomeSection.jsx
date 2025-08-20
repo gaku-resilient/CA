@@ -6,7 +6,7 @@ import Homecheck  from '../components/Herosection/Homepage';
 
 const Home = () => {
   return (
-    <div className="home-page mt-45">
+    <div className="home-page mt-15">
       {/* Custom Cursor */}
       {/* <Cursor /> */}
       

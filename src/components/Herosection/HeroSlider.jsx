@@ -632,7 +632,7 @@ const ModernHeroSection = () => {
   );
 
   return (
-    <div className="relative min-h-screen overflow-hidden">
+    <div className="relative min-h-screen overflow-hidden  ">
       {/* Background Image with Parallax Effect */}
       <div className="absolute inset-0 transition-all duration-1000 ease-in-out">
         <div 
@@ -643,7 +643,7 @@ const ModernHeroSection = () => {
           }}
         />
         {/* Animated Gradient Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-br from-[#123956]/95 via-[#123956]/85 to-[#123956]/90 animate-pulse" 
+        <div className="absolute inset-0 bg-gradient-to-br from-[#123956]/50 via-[#123956]/45 to-[#123956]/50 " 
              style={{ animationDuration: '4s' }} />
         
         {/* Geometric Pattern Overlay */}
@@ -658,17 +658,17 @@ const ModernHeroSection = () => {
 
       {/* Floating Animation Elements - Hidden on mobile for performance */}
       <div className="absolute inset-0 pointer-events-none hidden md:block">
-        <div className="absolute top-20 left-10 w-32 h-32 border-2 border-white/20 rounded-full animate-spin opacity-60" 
+        <div className="absolute top-20 left-10 w-32 h-32 border-2 border-white/20 rounded-full opacity-60" 
              style={{ animationDuration: '20s' }} />
-        <div className="absolute top-40 right-20 w-24 h-24 border border-white/30 rounded-full animate-pulse" />
-        <div className="absolute bottom-32 left-1/3 w-16 h-16 border-2 border-white/20 rounded-full animate-bounce" />
-        <div className="absolute top-1/3 right-1/3 w-20 h-20 border border-white/30 rounded-full animate-spin" 
+        <div className="absolute top-40 right-20 w-24 h-24 border border-white/30 rounded-full " />
+        <div className="absolute bottom-32 left-1/3 w-16 h-16 border-2 border-white/20 rounded-full " />
+        <div className="absolute top-1/3 right-1/3 w-20 h-20 border border-white/30 rounded-full " 
              style={{ animationDuration: '15s' }} />
         
         {/* Floating Particles */}
         {[...Array(6)].map((_, i) => (
           <div key={i} 
-               className={`absolute w-2 h-2 bg-white rounded-full animate-bounce`}
+               className={`absolute w-2 h-2 bg-white rounded-full`}
                style={{
                  top: `${20 + i * 10}%`,
                  left: `${10 + i * 15}%`,
@@ -679,7 +679,7 @@ const ModernHeroSection = () => {
       </div>
 
       {/* Main Content */}
-      <div className="relative z-10 min-h-screen flex items-center px-4 sm:px-6 lg:px-8 py-8">
+      <div className="relative z-10 min-h-screen flex items-center px-4 sm:px-6 lg:px-8  ">
         <div className="max-w-7xl mx-auto w-full">
           <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center">
             
@@ -689,7 +689,7 @@ const ModernHeroSection = () => {
             }`}>
               
               {/* Animated Badge */}
-              <div className="inline-flex items-center space-x-2 sm:space-x-3 bg-white/10 backdrop-blur-md border border-white/20 text-white px-3 sm:px-6 py-2 sm:py-3 rounded-full font-bold animate-bounce text-xs sm:text-sm">
+              <div className="inline-flex items-center space-x-2 sm:space-x-3 bg-white/10 backdrop-blur-md border border-white/20 text-white px-3 sm:px-6 py-2 sm:py-3 rounded-full font-bold text-xs sm:text-sm">
                 <Award className="w-4 h-4 sm:w-5 sm:h-5" />
                 <span>{currentSlideData.accent}</span>
               </div>
@@ -708,7 +708,7 @@ const ModernHeroSection = () => {
                         <div className="block">
                           <span className="relative">
                             {currentSlideData.title.split(' ').slice(3).join(' ')}
-                            <div className="absolute -bottom-1 lg:-bottom-2 left-0 w-full h-1 lg:h-2 bg-[#52ab98] animate-pulse" />
+                            <div className="absolute -bottom-1 lg:-bottom-2 left-0 w-full h-1 lg:h-2 bg-[#5277ab] " />
                           </span>
                         </div>
                       )}
@@ -755,7 +755,7 @@ const ModernHeroSection = () => {
               }`}>
                 {Object.entries(currentSlideData.stats).map(([key, value], index) => (
                   <div key={key} className="text-center group cursor-pointer">
-                    <div className="text-xl sm:text-3xl md:text-4xl lg:text-5xl font-black text-white mb-1 sm:mb-2 transform group-hover:scale-110 transition-transform animate-pulse">
+                    <div className="text-xl sm:text-3xl md:text-4xl lg:text-5xl font-black text-white mb-1 sm:mb-2 transform group-hover:scale-110 transition-transform ">
                       {value}
                     </div>
                     <div className="text-xs sm:text-sm text-white/80 font-bold uppercase tracking-wide">
@@ -823,11 +823,11 @@ const ModernHeroSection = () => {
               </div>
 
               {/* Enhanced Floating Elements - Hidden on mobile */}
-              <div className="absolute -top-8 -right-8 w-16 h-16 border-4 border-white/30 animate-spin backdrop-blur-sm hidden lg:flex items-center justify-center" 
+              <div className="absolute -top-8 -right-8 w-16 h-16 border-4 border-white/30 backdrop-blur-sm hidden lg:flex items-center justify-center" 
                    style={{ animationDuration: '10s' }}>
                 <TrendingUp className="w-6 h-6 text-white" />
               </div>
-              <div className="absolute -bottom-8 -left-8 w-12 h-12 border-2 border-white/40 animate-bounce backdrop-blur-sm hidden lg:flex items-center justify-center">
+              <div className="absolute -bottom-8 -left-8 w-12 h-12 border-2 border-white/40 backdrop-blur-sm hidden lg:flex items-center justify-center">
                 <Shield className="w-6 h-6 text-white" />
               </div>
             </div>

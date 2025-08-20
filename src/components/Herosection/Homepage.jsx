@@ -1890,15 +1890,15 @@ const Homepage = () => {
                 <p className="text-c8d8e4 text-sm sm:text-base">+91-9623365775</p>
               </a>
               <a
-                href="mailto:info@vittamintegrityservices.com"
+                href="mailto:vittamintegrityservices@gmail.com"
                 className="bg-white/10 backdrop-blur-sm p-4 sm:p-6 rounded-2xl hover:bg-white/20 transition-all duration-300"
               >
                 <Mail className="w-6 sm:w-8 h-6 sm:h-8 text-[#123956] mx-auto mb-3 sm:mb-4" />
                 <h3 className="font-bold text-base sm:text-lg mb-2">Email Us</h3>
-                <p className="text-c8d8e4 text-sm sm:text-base">info@vittamintegrityservices.com</p>
+                <p className="text-c8d8e4 text-sm sm:text-base">vittamintegrityservices@gmail.com</p>
               </a>
               <a
-                href="https://calendly.com/vittamintegrityservices/consultation"
+                href="https://vittamintegrityservices/contact"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-white/10 backdrop-blur-sm p-4 sm:p-6 rounded-2xl hover:bg-white/20 transition-all duration-300"
@@ -1911,7 +1911,7 @@ const Homepage = () => {
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href="https://calendly.com/vittamintegrityservices/consultation"
+                href="https://vittamintegrityservices/contact"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-[#123956] text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full font-bold text-sm sm:text-base hover:bg-f2f2f2 transition-all duration-300 hover:scale-105 hover:shadow-lg flex items-center justify-center group"
@@ -1920,12 +1920,12 @@ const Homepage = () => {
                 <Calendar className="ml-2 w-4 sm:w-5 h-4 sm:h-5 transform group-hover:scale-110 transition-transform" />
               </a>
               <a
-                href="https://vittamintegrityservices.com/brochure.pdf"
+                href="tel:+919623365775"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="border-2 border-[#123956] text-[#123956] px-6 sm:px-8 py-3 sm:py-4 rounded-full font-bold text-sm sm:text-base hover:bg-white hover:transition-all duration-300 hover:scale-105"
               >
-                Download Our Brochure
+                Call Now
               </a>
             </div>
           </div>

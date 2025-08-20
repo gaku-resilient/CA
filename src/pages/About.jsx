@@ -749,7 +749,7 @@ const AboutPage = () => {
 
             <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center pt-8 sm:pt-10">
               <a
-                href="https://calendly.com/vittamintegrityservices/consultation"
+                href="./contact"
                 className="bg-[#123458] text-[#ffffff] px-10 sm:px-12 md:px-14 py-5 sm:py-6 md:py-7 font-black text-base sm:text-lg md:text-xl rounded-xl hover:bg-[#3e556d] transition-all duration-300 transform hover:scale-105 flex items-center justify-center space-x-3 shadow-xl hover:shadow-2xl"
               >
                 <span>BOOK FREE CONSULTATION</span>
