@@ -170,7 +170,7 @@ const ContactPage = () => {
   ];
 
   return (
-    <div className="bg-[#ffffff] font-roboto min-h-screen overflow-x-hidden">
+    <div className="bg-[#ffffff] font-roboto min-h-screen overflow-x-hidden pt-10">
       <Helmet>
         <title>Contact Vittam Chartered Accountants - Mumbai's Leading CA Firm</title>
         <meta name="description" content="Contact Vittam Chartered Accountants in Mumbai. Expert CA services, tax planning, audit services. Call +91 98765 43210 or email info@vittam.com. Free consultation available." />

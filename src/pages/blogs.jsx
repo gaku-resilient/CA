@@ -32,7 +32,7 @@ const BlogFrontend = () => {
       tags: ["Remote Work", "Tax Law", "Digital Nomads"],
       views: 2847,
       likes: 156,
-      featured: true,
+      featured: false,
       image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=400&fit=crop"
     },
     {

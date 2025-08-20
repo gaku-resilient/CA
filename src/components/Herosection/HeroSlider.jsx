@@ -268,7 +268,7 @@ const ModernHeroSection = () => {
           }}
         />
         {/* Animated Gradient Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-br from-[#2b6777]/95 via-[#2b6777]/85 to-[#52ab98]/90 animate-pulse" 
+        <div className="absolute inset-0 bg-gradient-to-br from-[#123956]/95 via-[#123956]/85 to-[#123956]/90 animate-pulse" 
              style={{ animationDuration: '4s' }} />
         
         {/* Geometric Pattern Overlay */}
@@ -359,11 +359,11 @@ const ModernHeroSection = () => {
               <div className={`flex flex-col sm:flex-row gap-4 transform transition-all duration-700 delay-1000 ${
                 isLoaded ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'
               }`}>
-                <button className="group bg-white text-[#2b6777] px-8 py-4 font-bold text-lg hover:bg-[#52ab98] hover:text-white transition-all duration-300 flex items-center justify-center space-x-3 transform hover:scale-105 hover:shadow-2xl">
+                <button className="group bg-white text-[#123956] px-8 py-4 font-bold text-lg hover:bg-[#123956] hover:text-white transition-all duration-300 flex items-center justify-center space-x-3 transform hover:scale-105 hover:shadow-2xl">
                   <span>GET STARTED</span>
                   <ArrowRight className="w-6 h-6 group-hover:translate-x-2 transition-transform" />
                 </button>
-                <button className="border-2 border-white text-white px-8 py-4 font-bold text-lg hover:bg-white hover:text-[#2b6777] transition-all duration-300 transform hover:scale-105 backdrop-blur-sm">
+                <button className="border-2 border-white text-white px-8 py-4 font-bold text-lg hover:bg-white hover:text-[#123956] transition-all duration-300 transform hover:scale-105 backdrop-blur-sm">
                   SCHEDULE CALL
                 </button>
               </div>
@@ -401,12 +401,12 @@ const ModernHeroSection = () => {
                     
                     {/* Professional Avatar */}
                     <div className="flex items-center space-x-4 border-b-2 border-[#c8d8e4] pb-6">
-                      <div className="w-20 h-20 bg-gradient-to-br from-[#2b6777] to-[#52ab98] flex items-center justify-center rounded-full transform hover:rotate-12 transition-transform shadow-lg">
+                      <div className="w-20 h-20 bg-gradient-to-br from-[#49779a] to-[#123956] flex items-center justify-center rounded-full transform hover:rotate-12 transition-transform shadow-lg">
                         <Users className="w-10 h-10 text-white" />
                       </div>
                       <div>
-                        <h3 className="text-xl font-black text-[#2b6777]">CA Sunita Kulthe & CA Shraddha Kamath</h3>
-                        <p className="text-sm text-[#2b6777] font-bold uppercase tracking-wide">Founder and Partner, Vittam Integrity Services</p>
+                        <h3 className="text-xl font-black text-[#123956]">Vittam Integrity Services</h3>
+                        <p className="text-sm text-[#223b4e] font-bold uppercase tracking-wide">Founder and Partner, Vittam Integrity Services</p>
                       </div>
                     </div>
 
@@ -420,17 +420,17 @@ const ModernHeroSection = () => {
                         <div key={index} 
                              className={`flex items-center justify-between p-4 border-2 border-[#c8d8e4] hover:border-[#2b6777] transition-all duration-300 group hover:shadow-lg transform transition-all duration-500 delay-${index * 100}`}>
                           <div className="flex items-center space-x-4">
-                            <div className="w-12 h-12 bg-gradient-to-br from-[#f2f2f2] to-[#e0e0e0] group-hover:from-[#2b6777] group-hover:to-[#52ab98] flex items-center justify-center rounded-full transition-all shadow-md">
-                              <service.icon className="w-6 h-6 text-[#2b6777] group-hover:text-white transition-colors" />
+                            <div className="w-12 h-12 bg-gradient-to-br from-[#f2f2f2] to-[#e0e0e0] group-hover: group-hover:to-[#33495a] flex items-center justify-center rounded-full transition-all shadow-md">
+                              <service.icon className="w-6 h-6 text-[#123956]group-hover:text-white transition-colors" />
                             </div>
-                            <span className="font-bold text-base text-[#2b6777]">{service.title}</span>
+                            <span className="font-bold text-base text-[#123956]">{service.title}</span>
                           </div>
-                          <span className="text-[#52ab98] font-black text-sm animate-pulse">✓ {service.status}</span>
+                          <span className="text-[#123956] font-black text-sm ">✓ {service.status}</span>
                         </div>
                       ))}
                     </div>
 
-                    <button className="w-full bg-gradient-to-r from-[#2b6777] to-[#52ab98] text-white py-4 font-black text-lg hover:from-[#52ab98] hover:to-[#2b6777] transition-all duration-300 transform hover:scale-105 hover:shadow-xl">
+                    <button className="w-full bg-gradient-to-r from-[#2b6777] to-[#123956] text-white py-4 font-black text-lg hover:from-[#123956] hover:to-[#2b6777] transition-all duration-300 transform hover:scale-105 hover:shadow-xl">
                       Book Financial Consultation Now
                     </button>
                   </div>
