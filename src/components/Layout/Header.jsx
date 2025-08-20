@@ -874,7 +874,7 @@ const Header = () => {
 
             {/* Mobile CTA Button */}
             <a 
-              href="https://calendly.com/vittamintegrityservices/consultation"
+              href="https://vittamintegrityservices/contact"
               target="_blank"
               rel="noopener noreferrer"
               className="block w-full bg-[#ffffff] text-[#2b6777] py-2.5 sm:py-3 rounded-full font-black text-sm sm:text-base hover:bg-[#f2f2f2] transition-all duration-300 transform hover:scale-105 text-center"

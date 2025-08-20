@@ -950,7 +950,7 @@ const ContactPage = () => {
         ></div>
       </div>
 
-      <section className="relative min-h-[70vh] sm:min-h-[85vh] bg-gradient-to-br from-[#ffffff] via-[#f2f2f2] to-[#c8d8e4] overflow-hidden pt-26">
+      <section className="relative min-h-[70vh] sm:min-h-[85vh] bg-gradient-to-br from-[#ffffff] via-[#f2f2f2] to-[#c8d8e4] overflow-hidden pt-20">
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 sm:pt-28 md:pt-36 pb-16 sm:pb-20 md:pb-24">
           <div className="text-center space-y-8 sm:space-y-10" data-animate>
             <nav className="text-sm font-medium" aria-label="Breadcrumb">

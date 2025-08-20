@@ -877,7 +877,7 @@ const TeamPage = () => {
 
       {/* Hero Section */}
       <section className="relative min-h-[50vh] sm:min-h-[60vh] md:min-h-[70vh] bg-gradient-to-br from-[#ffffff] via-[#f2f2f2] to-[#c8d8e4] overflow-hidden">
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-12 sm:pt-16 md:pt-24 pb-10 sm:pb-12 md:pb-16">
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-22 sm:pt-16 md:pt-24 pb-10 sm:pb-12 md:pb-16">
           <div className="text-center space-y-4 sm:space-y-6 md:space-y-8">
             <nav className="text-xs sm:text-sm font-medium" aria-label="Breadcrumb">
               <ol className="flex justify-center space-x-2 text-neutral-700">
@@ -899,19 +899,31 @@ const TeamPage = () => {
               </p>
             </div>
 
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4 md:gap-6 max-w-4xl mx-auto pt-6 sm:pt-8 md:pt-12">
-              {[
-                { value: "30+", label: "Combined Experience" },
-                { value: "7+", label: "Specialized Services" },
-                { value: "Global", label: "Client Reach" },
-                { value: "2", label: "Expert Partners" }
-              ].map((stat, index) => (
-                <div key={index} className="text-center group cursor-pointer p-2 sm:p-3 rounded-xl hover:bg-[#ffffff] hover:shadow-lg transition-all duration-300">
-                  <div className="text-xl sm:text-2xl md:text-3xl font-black text-black mb-1 sm:mb-2 group-hover:scale-110 transition-transform">{stat.value}</div>
-                  <div className="text-xs sm:text-sm text-neutral-700 font-bold uppercase tracking-tight">{stat.label}</div>
-                </div>
-              ))}
-            </div>
+           <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4 md:gap-6 max-w-3xl mx-auto pt-4 sm:pt-6 md:pt-8">
+  {[
+    { value: "30+", label: "Combined Experience" },
+    { value: "7+", label: "Specialized Services" },
+    { value: "Global", label: "Client Reach" },
+    { value: "2", label: "Expert Partners" },
+  ].map((stat, index) => (
+    <div
+      key={index}
+      className="text-center group cursor-pointer p-2 sm:p-3 md:p-4 rounded-xl hover:bg-[#ffffff] hover:shadow-lg transition-all duration-300 ease-in-out min-w-0"
+      aria-label={`${stat.value} ${stat.label}`}
+      style={{ willChange: 'transform, background, box-shadow' }}
+    >
+      <div className="text-base sm:text-lg md:text-2xl lg:text-3xl font-black text-black mb-1 sm:mb-2 md:mb-3 group-hover:scale-105 transition-transform duration-300">
+        {stat.value}
+      </div>
+      <div
+        className="text-xs sm:text-sm md:text-base text-neutral-700 font-bold uppercase tracking-tight line-clamp-1"
+        title={stat.label}
+      >
+        {stat.label}
+      </div>
+    </div>
+  ))}
+</div>
           </div>
         </div>
       </section>

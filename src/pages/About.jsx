@@ -409,7 +409,7 @@ const AboutPage = () => {
   const [activeTab, setActiveTab] = useState('mission');
 
   return (
-    <div className="bg-[#ffffff] font-roboto min-h-screen pt-35">
+    <div className="bg-[#ffffff] font-roboto min-h-screen pt-30">
       {/* SEO Meta Information */}
       <div className="hidden">
         <h1>About Vittam Integrity Services - Bangalore's Leading Financial Advisory Firm</h1>

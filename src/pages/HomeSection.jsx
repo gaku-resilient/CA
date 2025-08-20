@@ -319,7 +319,7 @@ const Homepage = () => {
     <ErrorBoundary>
       <div className=" bg-white overflow-hidden  ">
         {/* Hero Section */}
-        <div className="relative min-h-[80vh] sm:min-h-screen overflow-hidden pt-24 sm:pt-32">
+        <div className="relative min-h-[80vh] sm:min-h-screen overflow-hidden pt-45 sm:pt-32">
   {/* Background Image with Parallax Effect */}
   <div className="absolute inset-0 transition-all duration-1000 ease-in-out">
     <div
@@ -452,7 +452,7 @@ const Homepage = () => {
 
           {/* Dynamic Stats */}
           <div
-            className={`grid grid-cols-2 sm:grid-cols-3 gap-4 sm:gap-6 pt-6 border-t-2 border-white/30 transform transition-all duration-600 delay-1000 ${
+            className={`grid grid-cols-3 sm:grid-cols-3 gap-4 sm:gap-6 pt-6 border-t-2 border-white/30 transform transition-all duration-600 delay-1000 ${
               isLoaded ? 'translate-y-0 opacity-100' : 'translate-y-6 opacity-0'
             }`}
           >
@@ -545,7 +545,7 @@ const Homepage = () => {
   </div>
 
   {/* Slider Controls */}
-  <div className="absolute bottom-4 sm:bottom-6 left-1/2 transform -translate-x-1/2 z-20">
+  <div className="absolute bottom-0 sm:bottom-6 left-1/2 transform -translate-x-1/2 z-20">
     <div className="flex items-center space-x-3 sm:space-x-4">
       <button
         onClick={prevSlide}
