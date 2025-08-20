@@ -821,7 +821,7 @@ const Header = () => {
             {/* CTA Button & Mobile Menu */}
             <div className="flex items-center space-x-2 sm:space-x-3">
               <a
-                href="https://calendly.com/vittamintegrityservices/consultation"
+                href="/contact"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hidden md:block bg-[#ffffff] text-[#2b6777] px-3 sm:px-4 py-2 sm:py-2.5 rounded-full font-black text-xs sm:text-sm hover:bg-[#f2f2f2] transition-all duration-300 transform hover:scale-105 hover:shadow-md"

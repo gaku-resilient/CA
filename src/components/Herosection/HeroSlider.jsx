@@ -509,7 +509,9 @@
 
 
 import React, { useState, useEffect } from 'react';
-import { ArrowRight, Shield, TrendingUp, Users, Award, Calculator, ChevronLeft, ChevronRight, Phone, Calendar, Mail } from 'lucide-react';
+import { ArrowRight, Shield, TrendingUp, Users, Award, Calculator, ChevronLeft, ChevronRight, Phone, Calendar, Mail, Link } from 'lucide-react';
+// import { Link } from 'react-router-dom';
+
 
 const ModernHeroSection = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -571,12 +573,12 @@ const ModernHeroSection = () => {
     // Open scheduling modal or redirect to calendar
     setShowContactModal(true);
   };
-
-  const handleBookConsultation = () => {
-    // Handle consultation booking
-
-    // In real implementation, this would open a booking system
-  };
+ // const handleBookConsultation = () => {
+  //   // Handle consultation booking
+  //       Navigate('/contact') ;// Redirect to booking page
+  //   // In real implementation, this would open a booking system
+  // };
+ 
 
   const nextSlide = () => {
     setCurrentSlide((prev) => (prev + 1) % slides.length);
@@ -616,7 +618,7 @@ const ModernHeroSection = () => {
             <Mail className="w-5 h-5 text-[#123956]" />
             <span>vittamintegrityservices@gmail.com</span>
           </a>
-          <button 
+          {/* <button 
             onClick={() => {
               setShowContactModal(false);
               alert('Calendar booking system would open here');
@@ -625,7 +627,7 @@ const ModernHeroSection = () => {
           >
             <Calendar className="w-5 h-5 text-[#123956]" />
             <span>Schedule a Call</span>
-          </button>
+          </button> */}
         </div>
       </div>
     </div>
@@ -810,15 +812,20 @@ const ModernHeroSection = () => {
                           <span className="text-[#123956] font-black text-xs sm:text-sm whitespace-nowrap">✓ {service.status}</span>
                         </div>
                       ))}
+                
                     </div>
-
+              
+              
+                    <a href="/contact">
                     <button 
-                      onClick={handleBookConsultation}
+                  
                       className="w-full bg-gradient-to-r from-[#2b6777] to-[#123956] text-white py-3 sm:py-4 font-black text-base sm:text-lg hover:from-[#123956] hover:to-[#2b6777] transition-all duration-300 transform hover:scale-105 hover:shadow-xl active:scale-95"
                     >
                       Book Financial Consultation Now
                     </button>
+                   </a>
                   </div>
+              
                 </div>
               </div>
 

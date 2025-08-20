@@ -11,7 +11,7 @@ const Home = () => {
       {/* <Cursor /> */}
       
      
-      <HeroSlider />
+      {/* <HeroSlider /> */}
       <Homecheck/>
 
       
