@@ -773,7 +773,7 @@ const TeamPage = () => {
       credentials: 'M.Com, CA, CMA',
       experience: '15+ Years',
       currentRole: 'Senior Manager – Finance at Cargill Business Services',
-      image: 'src/assets/Shraddha.jpg',
+      image: '/Shraddha.jpg',
       specializations: [
         'Financial statement analysis and audits',
         'Designing and strengthening internal control frameworks',
@@ -804,7 +804,7 @@ const TeamPage = () => {
       credentials: 'B.Com, FCA, Dip IFRS (London), ASA (CPA Australia)',
       experience: '13+ Years',
       currentRole: 'Fellow Chartered Accountant',
-      image: 'src/assets/Sunita.jpg',
+      image: '/Sunita.jpg',
       specializations: [
         'Complex tax litigation (assessments, appellate proceedings)',
         'Analytical audit approach',
