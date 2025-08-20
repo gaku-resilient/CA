@@ -801,14 +801,14 @@ const Header = () => {
 
             {/* Desktop Navigation */}
             <div className="hidden lg:flex items-center space-x-3 xl:space-x-6">
-              {['HOME', 'ABOUT', 'TEAM', 'CONTACT', 'BLOGS'].map((item, index) => (
+              {['HOME', 'ABOUT', 'TEAM', 'SERVICES','CONTACT', ].map((item, index) => (
                 <a 
                   key={index}
                   href={item === 'HOME' ? '/' :
                     item === 'ABOUT' ? '/about' :
                     item === 'TEAM' ? '/team' :
+                    item === 'SERVICES' ? '/services' :
                     item === 'CONTACT' ? '/contact' :
-                    item === 'BLOGS' ? '/blogs' :
                     `#${item.toLowerCase()}`}
                   className="relative group font-bold text-xs xl:text-sm text-[#ffffff] hover:text-[#c8d8e4] transition-colors"
                 >
@@ -854,12 +854,13 @@ const Header = () => {
           <div className="p-4 sm:p-5 md:p-6 space-y-3 sm:space-y-4">
             {/* Mobile Navigation Links */}
             <div className="space-y-2 sm:space-y-3">
-              {['HOME', 'ABOUT', 'TEAM', 'CONTACT', 'BLOGS'].map((item, index) => (
+              {['HOME', 'ABOUT', 'TEAM', 'SERVICE' , 'CONTACT',  ].map((item, index) => (
                 <a 
                   key={index}
                   href={item === 'HOME' ? '/' :
                     item === 'ABOUT' ? '/about' :
                     item === 'TEAM' ? '/team' :
+                    item === 'SERVICE' ? '/services' :
                     item === 'CONTACT' ? '/contact' :
                     item === 'BLOGS' ? '/blogs' :
                     `#${item.toLowerCase()}`}

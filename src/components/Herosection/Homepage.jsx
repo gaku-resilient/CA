@@ -1450,14 +1450,7 @@ const Homepage = () => {
     <ErrorBoundary>
       <div className="min-h-screen bg-white overflow-hidden">
         {/* Custom Cursor */}
-        <div 
-          className="fixed w-6 h-6 bg-teal-600 rounded-full pointer-events-none z-50 mix-blend-difference transition-transform duration-300 ease-out hidden lg:block"
-          style={{
-            left: mousePosition.x - 12,
-            top: mousePosition.y - 12,
-            transform: `translate(${mousePosition.x * 0.02}px, ${mousePosition.y * 0.02}px)`
-          }}
-        />
+       
 
         {/* Social Proof Section */}
         <section id="benefits-section" className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-white to-sky-300 pt-20">

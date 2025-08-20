@@ -462,7 +462,8 @@ const ContactPage = () => {
                   <div className="text-center space-y-4">
                     <MapPin className="w-16 h-16 text-black mx-auto" />
                     <h3 className="text-2xl font-black text-black">INTERACTIVE MAP</h3>
-                    <p className="text-lg text-neutral-700 font-medium">123 Business District, Nariman Point<br />Mumbai, Maharashtra 400021</p>
+                    <p className="text-lg text-neutral-700 font-medium">16046, Tower 16, Prestige Song of the South,
+Begur Road, Yelanahalli, Bangalore, Karnataka 560068</p>
                     <button className="bg-[#204474] text-[#ffffff] px-6 py-3 rounded-xl font-bold hover:bg-[#5286ab] transition-all duration-300" aria-label="Get directions to office">
                       GET DIRECTIONS
                     </button>
@@ -489,7 +490,7 @@ const ContactPage = () => {
         </div>
       </section>
 
-      <section className="py-16 sm:py-20 md:py-24 bg-[#2b5277] text-[#ffffff]" id="why-contact">
+      <section className="py-16 sm:py-20 md:py-24 bg-[#ffffff] text-black" id="why-contact">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center space-y-6 sm:space-y-8 mb-12 sm:mb-16 md:mb-20" data-animate>
             <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black">
@@ -520,15 +521,15 @@ const ContactPage = () => {
             ].map((item, index) => (
               <div 
                 key={index} 
-                className="bg-gradient-to-br from-[#5292ab] bg-opacity-20 backdrop-blur-lg p-8 rounded-3xl hover:bg-opacity-30 transition-all duration-300 transform hover:scale-105 group border border-[#ffffff] border-opacity-30 shadow-md hover:shadow-xl"
+                className="bg-gradient-to-br  bg-[#072a35] backdrop-blur-lg p-8 rounded-3xl hover:bg-opacity-30 transition-all duration-300 transform hover:scale-105 group border border-[#ffffff] border-opacity-30 shadow-md hover:shadow-xl"
                 data-animate
               >
                 <div className="space-y-6">
                   <div className="w-16 h-16 bg-[#ffffff] bg-opacity-20 rounded-full flex items-center justify-center group-hover:rotate-12 transition-transform shadow-lg">
                     <item.icon className="w-8 h-8 text-[#072a35]" />
                   </div>
-                  <h3 className="text-xl font-black">{item.title}</h3>
-                  <p className="text-base leading-relaxed font-medium opacity-90">{item.description}</p>
+                  <h3 className="text-xl font-black text-white">{item.title}</h3>
+                  <p className="text-base leading-relaxed font-medium opacity-90 text-white">{item.description}</p>
                 </div>
               </div>
             ))}

@@ -5459,63 +5459,63 @@ const ServicesPage = () => {
       </section>
 
       {/* Why Choose Us */}
-      <section className="py-20 text-black" id="why-choose">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center space-y-6 mb-16">
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-black">
-              WHY CHOOSE VITTAM INTEGRITY SERVICES?
-            </h2>
-            <p className="text-xl text-black max-w-3xl mx-auto">
-              Experience the difference with Bangalore's trusted CA firm
-            </p>
-          </div>
-
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
-            {[
-              {
-                icon: Award,
-                title: "Expert Professionals",
-                description: "ICAI certified chartered accountants with 30+ years of combined experience across diverse sectors like Real Estate, NGOs/Trusts, Hospitality, NRI Taxation, Infrastructure, Technology Services, and Multinational Corporations."
-              },
-              {
-                icon: Shield,
-                title: "Unwavering Integrity",
-                description: "Guided by principles of honesty, accountability, and ethical practice, ensuring transparent and reliable services."
-              },
-              {
-                icon: Clock,
-                title: "Global Reach",
-                description: "Support for clients worldwide with compliance under Indian GAAP, US GAAP, IFRS, and international standards."
-              },
-              {
-                icon: Users,
-                title: "Personalized Approach",
-                description: "Tailored solutions with deep technical expertise in financial management, taxation, audits, and business advisory."
-              },
-              {
-                icon: TrendingUp,
-                title: "Value-Driven",
-                description: "Delivering value with unwavering integrity, empowering businesses through personalized services and continuous improvement."
-              },
-              {
-                icon: Star,
-                title: "Proven Expertise",
-                description: "Led by CA Sunita Kulthe and Shraddha Kamath, specializing in complex tax litigation, audits, and GCC consultation."
-              }
-            ].map((item, index) => (
-              <div key={index} className={`bg-[#2B4D77] backdrop-blur-lg p-8 rounded-3xl hover:bg-gray-800 transition-all duration-300 transform hover:scale-105 group ${isVisible['why-choose'] ? `opacity-100 translate-y-0 delay-${index * 100}` : 'opacity-0 translate-y-5'}`}>
-                <div className="space-y-6">
-                  <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center group-hover:rotate-12 transition-transform">
-                    <item.icon className="w-8 h-8 text-black" />
-                  </div>
-                  <h3 className="text-xl font-black">{item.title}</h3>
-                  <p className="text-gray-300 leading-relaxed">{item.description}</p>
+       <section className="py-16 sm:py-20 md:py-24 bg-[#f4f6f8] text-black" id="why-choose-us">
+              <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div className="text-center space-y-6 sm:space-y-8 mb-12 sm:mb-16 md:mb-20">
+                  <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black">
+                    WHY CHOOSE Vittam Integrity Services?
+                  </h2>
+                  <p className="text-lg sm:text-xl md:text-2xl text-black max-w-4xl mx-auto font-medium">
+                    Delivering value with unwavering integrity
+                  </p>
+                </div>
+      
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-10">
+                  {[
+                    {
+                      icon: Award,
+                      title: "30+ Years Expertise",
+                      description: "Over three decades of combined experience in financial and tax advisory across diverse industries."
+                    },
+                    {
+                      icon: Users,
+                      title: "Expert Team",
+                      description: "Led by qualified Chartered Accountants with specialized expertise in taxation, audits, and compliance."
+                    },
+                    {
+                      icon: Shield,
+                      title: "Ethical Approach",
+                      description: "Rooted in honesty, accountability, and professional integrity for trusted financial solutions."
+                    },
+                    {
+                      icon: Clock,
+                      title: "Global Availability",
+                      description: "Serving clients across time zones with flexible, responsive support tailored to your needs."
+                    },
+                    {
+                      icon: TrendingUp,
+                      title: "Comprehensive Solutions",
+                      description: "Offering end-to-end services in taxation, audits, compliance, and business advisory."
+                    },
+                    {
+                      icon: Star,
+                      title: "Client-Focused",
+                      description: "Personalized services ensuring transparency and long-term value for startups and enterprises."
+                    }
+                  ].map((item, index) => (
+                    <div key={index} className="bg-[#123458] backdrop-blur-lg p-6 sm:p-8 md:p-10 rounded-3xl hover:bg-opacity-30 transition-all duration-300 transform hover:scale-105 group border border-[#ffffff] border-opacity-30 shadow-md hover:shadow-xl">
+                      <div className="space-y-6 sm:space-y-8">
+                        <div className="w-16 sm:w-20 h-16 sm:h-20 bg-[#f2f2f2] bg-opacity-20 rounded-full flex items-center justify-center group-hover:rotate-12 transition-transform shadow-lg">
+                          <item.icon className="w-8 sm:w-10 h-8 sm:h-10 text-[#123458]" />
+                        </div>
+                        <h3 className="text-lg sm:text-xl md:text-2xl font-black text-[#f2f2f2]">{item.title}</h3>
+                        <p className="text-base sm:text-lg text-[#f2f2f2] leading-relaxed font-medium">{item.description}</p>
+                      </div>
+                    </div>
+                  ))}
                 </div>
               </div>
-            ))}
-          </div>
-        </div>
-      </section>
+            </section>
 
       {/* Service Process */}
       <section className="py-20 bg-[#FFFFFF]" id="service-process">
